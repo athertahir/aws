@@ -35,6 +35,8 @@ By the end of this lab, you will be able to:
 Start Lab
 ---------
 
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
 Task 1: Launch Your Amazon EC2 Instance
 ---------------------------------------
