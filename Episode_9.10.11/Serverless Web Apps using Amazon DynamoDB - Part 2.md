@@ -1,7 +1,7 @@
-Serverless Web Apps using Amazon DynamoDB - Part 2 {.headline-5}
+Serverless Web Apps using Amazon DynamoDB - Part 2
 ==================================================
 
-Serverless Web Apps using Amazon DynamoDB - Part 2 {.lab-preamble__title}
+Serverless Web Apps using Amazon DynamoDB - Part 2
 ==================================================
 
 - Overview
@@ -14,7 +14,7 @@ Serverless Web Apps using Amazon DynamoDB - Part 2 {.lab-preamble__title}
 - End Lab
 - Conclusion
 
-Overview [step1]
+Overview 
 --------
 
 Continue the mission! In this lab, you will continue building a mission
@@ -26,7 +26,7 @@ will then test your new functions. In Part 3, you will publish the app,
 utilizing all of the DynamoDB skills you learn through the three labs,
 and send your team of super heroes off to save the world!
 
-Topics covered [step2]
+Topics covered 
 --------------
 
 By the end of this lab you will be able to:
@@ -36,7 +36,7 @@ By the end of this lab you will be able to:
 -   Test Lambda functions with a template
 -   Configure custom tests for Lambda functions
 
-Prerequisites [step3]
+Prerequisites 
 -------------
 
 You should familiarize yourself with key concepts by taking the
@@ -131,10 +131,10 @@ and Amazon DynamoDB, process streaming data stored in Amazon Kinesis, or
 create your own back end that operates at AWS scale, performance, and
 security.
 
-Start Lab [step4]
+Start Lab 
 ---------
 
-Task 1: Check CloudFormation Status [step5]
+Task 1: Check CloudFormation Status 
 -----------------------------------
 
 3.  In the **AWS Management Console**, on the Services menu, click
@@ -155,7 +155,7 @@ lab. It may take a few minutes for all the resources to be ready. While
 you wait, you can observe the creation process for the following
 resources.
 
-Task 2: Create Your Lambda Functions [step6]
+Task 2: Create Your Lambda Functions 
 ------------------------------------
 
 In this task, you will create two Lambda functions. The first will
@@ -177,7 +177,7 @@ same DynamoDB table.
 
 9.  Within the **index.js** tab, paste the code shown below:
 
-``` {.highlight .plaintext}
+```
 var doc = require('aws-sdk');
 var dynamo = new doc.DynamoDB();
 
@@ -241,7 +241,7 @@ details from the SuperMission DynamoDB table.
 
 20. Within the **index.js** tab, paste the code shown below:
 
-``` {.highlight .plaintext}
+```
 var doc = require('aws-sdk');
 var dynamo = new doc.DynamoDB();
 
@@ -283,7 +283,7 @@ This function retrieves the mission details from the DynamoDB table.
 
 This code looks for details of Batman's mission in the DynamoDB table.
 
-``` {.highlight .json}
+```
 {
   "superhero": "Batman"
 }
@@ -304,14 +304,14 @@ displaying the mission details for “Batman”.
 Congratulations! You created and tested a Lambda function that
 retrieves mission details from the DynamoDB table.
 
-If you have time... [step7]
+If you have time... 
 -------------------
 
 Go back to the last test you ran. Replace "Batman" with another super
 hero (Superman, Iron Man) and practice retrieving details for other
 missions.
 
-End Lab [step8]
+End Lab 
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the
@@ -331,7 +331,7 @@ Congratulations! You have completed this lab. You have successfully:
 -   Tested Lambda functions using a template
 -   Configured custom tests for Lambda functions
 
-Additional Resources [step10]
+Additional Resources 
 --------------------
 
 -   [Amazon DynamoDB](https://aws.amazon.com/documentation/dynamodb)

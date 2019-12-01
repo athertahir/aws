@@ -1,7 +1,7 @@
-Introduction to AWS Lambda {.headline-5}
+Introduction to AWS Lambda
 ==========================
 
-Introduction to AWS Lambda {.lab-preamble__title}
+Introduction to AWS Lambda
 ==========================
 
 - Overview
@@ -12,7 +12,7 @@ Introduction to AWS Lambda {.lab-preamble__title}
 - Conclusion
 - End Lab
 
-Overview [step1]
+Overview 
 --------
 
 The lab provides a basic explanation of AWS Lambda. It will demonstrate
@@ -47,7 +47,7 @@ Start Lab
 -   Open https://808477742599.signin.aws.amazon.com/console
 -   Enter login credentials
 
-Scenario [step3]
+Scenario 
 --------
 
 This lab demonstrates AWS Lambda by creating a serverless **image
@@ -81,7 +81,7 @@ The steps in this lab will show you how to create the Amazon S3 buckets
 and the Lambda function. You will then test the service by uploading
 images for resizing.
 
-Task 1: Create the Amazon S3 Buckets [step4]
+Task 1: Create the Amazon S3 Buckets 
 ------------------------------------
 
 In this task, you will create two Amazon S3 buckets -- one for input and
@@ -151,7 +151,7 @@ Later in this lab you will invoke the Lambda function manually by
 passing sample event data to the function. The sample data will refer to
 this *HappyFace.jpg* image.
 
-Task 2: Create an AWS Lambda Function [step5]
+Task 2: Create an AWS Lambda Function 
 -------------------------------------
 
 In this task, you will create an AWS Lambda function that reads an image
@@ -217,7 +217,7 @@ the Lambda function will not be found.
 
 -   **Amazon S3 link URL:** Copy and paste this URL into the field:
 
-``` {.highlight .plaintext}
+```
 https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-88/2.3.prod/scripts/CreateThumbnail.zip
 ```
 
@@ -226,7 +226,7 @@ The *CreateThumbnail.zip* file contains the following Lambda function:
 ** Do not copy this code -- it is just showing you what is in the Zip
 file.
 
-``` {.highlight .plaintext}
+```
 import boto3
 import os
 import sys
@@ -282,7 +282,7 @@ explanation of these settings:
 
 Your Lambda function has now been configured.
 
-Task 3: Test Your Function [step6]
+Task 3: Test Your Function 
 --------------------------
 
 In this task, you will test your Lambda function. This is done by
@@ -352,7 +352,7 @@ The image should now be a smaller thumbnail of the original image.
 You are welcome to upload your own images to the *images-* bucket and
 then check for thumbnails in the *-resized* bucket.
 
-Task 4: Monitoring and Logging [step7]
+Task 4: Monitoring and Logging 
 ------------------------------
 
 You can monitor AWS Lambda functions to identify problems and view log
@@ -392,7 +392,7 @@ of the function and the Maximum Memory that the function used. In
 addition, any logging messages or print statements from the functions
 are displayed in the logs. This assists in debugging Lambda functions.
 
-Conclusion [step8]
+Conclusion 
 ----------
 
 Congratulations! You have successfully:

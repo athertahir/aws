@@ -1,7 +1,7 @@
-Serverless Web Apps using Amazon DynamoDB - Part 3 {.headline-5}
+Serverless Web Apps using Amazon DynamoDB - Part 3
 ==================================================
 
-Serverless Web Apps using Amazon DynamoDB - Part 3 {.lab-preamble__title}
+Serverless Web Apps using Amazon DynamoDB - Part 3
 ==================================================
 
 - Overview
@@ -15,7 +15,7 @@ Serverless Web Apps using Amazon DynamoDB - Part 3 {.lab-preamble__title}
 - Task 5: Publish With S3
 - End Lab
 
-Overview [step1]
+Overview 
 --------
 
 Complete your mission! In this lab, you will complete and publish a
@@ -28,7 +28,7 @@ public website to retrieve information from your DynamoDB table via
 Lambda functions, using what you learned in all three labs to send super
 heroes off to save the world!
 
-Topics covered [step2]
+Topics covered 
 --------------
 
 By the end of this lab you will be able to:
@@ -40,7 +40,7 @@ By the end of this lab you will be able to:
 
 ... and give super heroes details about the missions they face!
 
-Lab Pre-requisites [step3]
+Lab Pre-requisites 
 ------------------
 
 You should familiarize yourself with key concepts by taking the
@@ -57,7 +57,7 @@ prior to this lab is the best learning experience.
 The qwikLABS lab environment is not accessible using an iPad or tablet
 device, but you can use these devices to view the lab instructions.
 
-Other AWS Services [step4]
+Other AWS Services 
 ------------------
 
 Other AWS Services than the ones needed for this lab are disabled by an
@@ -138,11 +138,11 @@ For documentation, see
 For pricing details, see
 [https://aws.amazon.com/api-gateway/pricing/](https://aws.amazon.com/api-gateway/pricing/).
 
-Start Lab [step5]
+Start Lab 
 ---------
 
 
-Task 1: Verify Your Region [step6]
+Task 1: Verify Your Region 
 --------------------------
 
 With Amazon EC2, you can place instances in multiple locations. Amazon
@@ -162,7 +162,7 @@ click the region name and select "N. Virginia".
 
 **Important** Make sure your region is set to "N. Virginia".
 
-Task 2: Verify Resources [step7]
+Task 2: Verify Resources 
 ------------------------
 
 3.  In the **AWS Management Console**, on the Services menu, click
@@ -225,7 +225,7 @@ You will see two IAM roles: *SuperDynamoDBScanRole* and
     **SuperDynamoDBScanRole**
 -   What does this policy allow?
 
-Task 3: Create and Deploy an API [step8]
+Task 3: Create and Deploy an API 
 --------------------------------
 
 In this task of the lab, you will learn how to create and configure a
@@ -379,7 +379,7 @@ Next, you will retrieve an HTML page that you will use to test your API.
 
 37. Copy this the following link into a new browser tab:
 
-``` {.highlight .plaintext}
+```
 https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl134-dynamodb-webapp-part3/static/index.html
 ```
 
@@ -420,7 +420,7 @@ display the Mission Status and Mission Dossier
 Congratulations! You successfully developed the contents of your
 website. You're almost ready to start sending super heroes on missions!
 
-Task 5: Publish With S3 [step10]
+Task 5: Publish With S3 
 -----------------------
 
 45. On the Services menu, click **S3**.
@@ -451,7 +451,7 @@ Task 5: Publish With S3 [step10]
 
 53. Copy the following bucket policy and paste it into the editor:
 
-``` {.highlight .json}
+```
 {
     "Version": "2012-10-17",
     "Statement": [{

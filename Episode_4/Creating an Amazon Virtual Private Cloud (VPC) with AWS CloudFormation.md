@@ -10,7 +10,7 @@ Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation {.headlin
 - Task 5: Delete the Stack
 - Conclusion
 
-Overview [step1]
+Overview 
 --------
 
 This lab shows how to create an Amazon Virtual Private Cloud (VPC) using AWS CloudFormation.
@@ -33,7 +33,7 @@ In this lab you will:
 
 To successfully complete this lab, you should be familiar with Amazon Virtual Private Cloud (VPC) concepts.
 
-Introducing the Technologies [step2]
+Introducing the Technologies 
 ----------------------------
 
 ### AWS CloudFormation
@@ -56,7 +56,7 @@ Start Lab
 -   Open https://808477742599.signin.aws.amazon.com/console
 -   Enter login credentials
 
-Task 1: Deploy a Stack using AWS CloudFormation [step4]
+Task 1: Deploy a Stack using AWS CloudFormation 
 -----------------------------------------------
 
 In this task, you will deploy a pre-defined template to build a VPC.
@@ -110,7 +110,7 @@ When the stack status is ***CREATE\_COMPLETE***, it means that the resources hav
 
 A list of resources is displayed. These resources will be explained in the next task. You may need to refresh the screen to see the resources.
 
-Task 2: Examine the VPC [step5]
+Task 2: Examine the VPC 
 -----------------------
 
 In this task, you will examine the VPC resources that were created together with the code from the CloudFormation template that created the resources.
@@ -333,7 +333,7 @@ The VPC output is simply a reference to the VPC, which results in the VPC ID bei
 
 The AZ1 output uses the **!GetAtt** function to retrieve an *attribute* of the resources. In this case, it is retrieving the AvailabilityZone attribute from Public Subnet 1.
 
-Task 3: Updating a Stack [step6]
+Task 3: Updating a Stack 
 ------------------------
 
 Once a CloudFormation stack has been deployed, it is recommended that any changes to the resources should be made through CloudFormation rather than by directly modifying the resources.
@@ -389,7 +389,7 @@ Four subnets are now displayed. Click each of them and examine their settings in
 
 The VPC has now been updated to support Highly Available applications.
 
-Task 4: Viewing a Stack in CloudFormation Designer [step7]
+Task 4: Viewing a Stack in CloudFormation Designer 
 --------------------------------------------------
 
 In this task, you will view the template using the AWS CloudFormation Designer.
@@ -420,7 +420,7 @@ Arrows show the relationship between resources, such as Route Tables that are as
 
 The Designer can also convert code between JSON and YAML formats.
 
-Task 5: Delete the Stack [step8]
+Task 5: Delete the Stack 
 ------------------------
 
 In this task, you will delete the stack, which will automatically delete the VPC and its components.
@@ -458,7 +458,7 @@ Congratulations! You now have successfully learned how to:
 -   Examine a template with the AWS CloudFormation Designer
 -   Delete a CloudFormation stack
 
-End Lab [step10]
+End Lab 
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the experience.

@@ -1,10 +1,10 @@
-Building a Media Sharing Website - Part 1: Media Upload {.headline-5}
+Building a Media Sharing Website - Part 1: Media Upload
 =======================================================
 
-Building a Media Sharing Website - Part 1: Media Upload {.lab-preamble__title}
+Building a Media Sharing Website - Part 1: Media Upload
 =======================================================
 
-Lab Overview [step1]
+Lab Overview 
 ------------
 
 In this lab, you will learn how to deploy a photo sharing website using
@@ -27,7 +27,7 @@ By the end of this lab, you will be able to:
 -   Launch a new Amazon EC2 instance to run your web server
 -   Create an Amazon DynamoDB database to hold your data
 
-Lab Pre-requisites [step2]
+Lab Pre-requisites 
 ------------------
 
 To successfully complete this lab, you should be familiar with basic
@@ -192,7 +192,7 @@ whether you use many buckets or just a few. You can store all of your
 objects in a single bucket, or you can organize them across several
 buckets.
 
-Task 1: Create an Amazon S3 Bucket [step4]
+Task 1: Create an Amazon S3 Bucket 
 ----------------------------------
 
 ### Create a Bucket
@@ -238,7 +238,7 @@ policy language.
 
 11. In the **Bucket policy editor** pane paste the following policy:
 
-``` {.highlight .json}
+```
 {
   "Version": "2008-10-17",
   "Statement":
@@ -261,7 +261,7 @@ policy language.
 
 13. Click Save
 
-Task 2: Create the Media Database [step5]
+Task 2: Create the Media Database 
 ---------------------------------
 
 For each entry, you need to store metadata information such as the
@@ -284,7 +284,7 @@ The table’s Overview tab will say “Table is being created”. The table
 creation process might take a few minutes. Please proceed on to the next
 section and deploy the web server environment.
 
-Task 3: Create the Web Front-End [step6]
+Task 3: Create the Web Front-End 
 --------------------------------
 
 In this task, you will use an Amazon EC2 instance to host the web
@@ -326,7 +326,7 @@ to the instance using the **User data** field.
 
 21. In the **User data** section paste the following:
 
-``` {.highlight .plaintext}
+```
 #!/bin/bash -ex
 export HOME=/home/ec2-user
 yum update -y
@@ -451,7 +451,7 @@ refresh the status.
 When it is running and has passed status checks, continue on to the next
 section.
 
-Task 4: Test the Deployment [step7]
+Task 4: Test the Deployment 
 ---------------------------
 
 ### Retrieve Your Host’s Public DNS Address
@@ -496,7 +496,7 @@ bucket.
 You will see the list of image files uploaded by the application in the
 bucket along with the thumbnail images (with the “tn.png” extension).
 
-Architecture Overview [step8]
+Architecture Overview 
 ---------------------
 
 So far, you created the following system:
@@ -525,7 +525,7 @@ experience.
 46. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**,
     and then click **Sign Out**.
 
-Conclusion [step10]
+Conclusion 
 ----------
 
 Congratulations! You now have successfully:

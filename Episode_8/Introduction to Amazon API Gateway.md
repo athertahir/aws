@@ -1,94 +1,7 @@
-*menu*
-
-[arrow\_back](https://run.qwiklabs.com/quests/21?catalog_rank=%7B%22rank%22%3A1%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&search_id=3931080)
-
-Introduction to Amazon API Gateway {.headline-5}
+Introduction to Amazon API Gateway
 ==================================
 
-*search*
-[*favorite\_border*](https://run.qwiklabs.com/favorite.json?item_id=269&item_type=CatalogItem)
-
-Add to favorites
-
-![](./Introduction%20to%20Amazon%20API%20Gateway_files/e3d6295d6af0ee50d6d78cf95236a4fd.png)
-
-![](./Introduction%20to%20Amazon%20API%20Gateway_files/e3d6295d6af0ee50d6d78cf95236a4fd.png)
-
-#### Ather Tahir {.subtitle-headline-1}
-
-athertahir1995@gmail.com
-
-[My Account](https://run.qwiklabs.com/my_account/profile)
-
-[0 Credits](https://run.qwiklabs.com/my_account/credits)[Sign
-Out](https://run.qwiklabs.com/users/sign_out)
-
-*close*
-
-[home Home](https://run.qwiklabs.com/) [school
-Catalog](https://run.qwiklabs.com/catalog) [event\_note My
-Learning](https://run.qwiklabs.com/my_learning)
-
-[home](https://run.qwiklabs.com/ "Home")
-
-Home
-
-[school](https://run.qwiklabs.com/catalog "Catalog")
-
-Catalog
-
-[event\_note](https://run.qwiklabs.com/my_learning "My Learning")
-
-My Learning
-
-[account\_circle](https://run.qwiklabs.com/my_account/profile "Profile")
-
-Profile
-
-[money](https://run.qwiklabs.com/my_account/credits "Credits & Subscriptions")
-
-Credits & Subscriptions
-
-[security](https://run.qwiklabs.com/my_account/security "Security")
-
-Security
-
-[](https://run.qwiklabs.com/focuses/269?parent=catalog#)
-
-help
-
-Help
-
-[Privacy](https://run.qwiklabs.com/privacy_policy)
-[Terms](https://run.qwiklabs.com/terms_of_service)
-
-**
-
-Introduction to Amazon API Gateway {.lab-preamble__title}
-==================================
-
-55 minutes Free
-
-[](https://run.qwiklabs.com/focuses/269/reviews?parent=catalog)
-
-Rate Lab
-
-![](./Introduction%20to%20Amazon%20API%20Gateway_files/aws-logo.png)
-
-**SPL-58 - Version 2.0.9**
-
-© 2019 Amazon Web Services, Inc. and its affiliates. All rights
-reserved. This work may not be reproduced or redistributed, in whole or
-in part, without prior written permission from Amazon Web Services, Inc.
-Commercial copying, lending, or selling is prohibited.
-
-Errors or corrections? Email us at
-[aws-course-feedback@amazon.com](mailto:aws-course-feedback@amazon.com).
-
-Other questions? Contact us at
-[https://aws.amazon.com/contact-us/aws-training/](https://aws.amazon.com/contact-us/aws-training/)
-
-Overview [step1]
+Overview 
 --------
 
 In this lab, you will create a simple FAQ micro-service. The
@@ -97,7 +10,7 @@ answer pair using an **Amazon API Gateway** endpoint that invokes an
 **AWS Lambda** function. Here is the architecture pattern for the
 micro-service:
 
-![](./Introduction%20to%20Amazon%20API%20Gateway_files/micro-service.png)
+![](./micro-service.png)
 
 ### Topics covered
 
@@ -123,7 +36,7 @@ required by the lab and in some cases are even further limited as an
 intentional aspect of the lab design. Expect errors when accessing other
 services or performing actions beyond those provided in this lab guide.
 
-Technical Concepts [step2]
+Technical Concepts 
 ------------------
 
 ### Microservice Architecture
@@ -328,51 +241,13 @@ deploying and maintaining APIs easy. API Gateway includes features to:
 -   **Blueprint:** A Lambda blueprint is an example lambda function that
     can be used as a base to build out new Lambda functions.
 
-Start Lab [step3]
+Start Lab
 ---------
 
-1.  At the top of your screen, launch your lab by clicking Start Lab
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
-This will start the process of provisioning your lab resources. An
-estimated amount of time to provision your lab resources will be
-displayed. You must wait for your resources to be provisioned before
-continuing.
-
-** If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-**Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./Introduction%20to%20Amazon%20API%20Gateway_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./Introduction%20to%20Amazon%20API%20Gateway_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
-
-Task 1: Create a Lambda Function [step4]
+Task 1: Create a Lambda Function 
 --------------------------------
 
 3.  In the **AWS Management Console**, on the Services menu, click
@@ -402,7 +277,7 @@ A page will be displayed with your function configuration.
 
 7.  Copy the code shown below and paste it into the index.js tab.
 
-``` {.highlight .plaintext}
+```
 var json = {
   "service": "lambda",
   "reference": "https://aws.amazon.com/lambda/faqs/",
@@ -519,7 +394,7 @@ when creating an API.
 ** You have successfully created the Lambda function. This has also
 created a default API Gateway that will trigger the Lambda function.
 
-Task 2: Test the Lambda function [step5]
+Task 2: Test the Lambda function 
 --------------------------------
 
 You will be presented with the FAQ Lambda function page.
@@ -535,7 +410,7 @@ You will be presented with the FAQ Lambda function page.
 A new browser tab will open. You should see a random FAQ entry, such as:
 
 ![Random
-FAQ](./Introduction%20to%20Amazon%20API%20Gateway_files/random-faq.png)
+FAQ](./random-faq.png)
 
 The Lambda function can also be tested in isolation.
 
@@ -548,7 +423,7 @@ The Lambda function can also be tested in isolation.
 -   Delete the provided keys and values, retaining an empty **{}** to
     represent an empty JSON object:
 
-``` {.highlight .plaintext}
+```
 {}
 ```
 
@@ -576,7 +451,7 @@ You will be presented with the same event data that was displayed in the
 Lambda Management Console. Examine the contents of each line to view the
 log information.
 
-Conclusion [step6]
+Conclusion 
 ----------
 
 Congratulations! You have completed this lab and have successfully
@@ -587,7 +462,7 @@ know how to:
 -   Create an Amazon API Gateway endpoints
 -   Debug API Gateway and Lambda with Amazon CloudWatch
 
-End Lab [step7]
+End Lab 
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the
@@ -616,7 +491,7 @@ experience.
 
 You may close the dialog if you don't want to provide feedback.
 
-Next Steps [step8]
+Next Steps 
 ----------
 
 This lab was intended to provide an introduction into microservices

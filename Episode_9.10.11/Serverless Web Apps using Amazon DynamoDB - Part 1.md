@@ -1,8 +1,8 @@
-Serverless Web Apps using Amazon DynamoDB - Part 1 {.headline-5}
+Serverless Web Apps using Amazon DynamoDB - Part 1
 ==================================================
 
 
-Serverless Web Apps using Amazon DynamoDB - Part 1 {.lab-preamble__title}
+Serverless Web Apps using Amazon DynamoDB - Part 1
 ==================================================
 
 - Overview
@@ -13,7 +13,7 @@ Serverless Web Apps using Amazon DynamoDB - Part 1 {.lab-preamble__title}
 - Task 4: Review IAM Policies and Roles
 - End Lab
 
-Overview [step1]
+Overview 
 --------
 
 Calling all AWS super heroes! Build a mission dossier generator using
@@ -167,11 +167,11 @@ for Lambda at
 For pricing details, see
 [https://aws.amazon.com/lambda/pricing/](https://aws.amazon.com/lambda/pricing/).
 
-Start Lab [step2]
+Start Lab 
 ---------
 
 
-Task 1: Create Your DynamoDB Table [step3]
+Task 1: Create Your DynamoDB Table 
 ----------------------------------
 
 3.  In the **AWS Management Console**, on the Services menu, click
@@ -193,7 +193,7 @@ table should appear.
 
 Congratulations! You created a DynamoDB table.
 
-Task 2: Add Items via Tree Method [step4]
+Task 2: Add Items via Tree Method 
 ---------------------------------
 
 In this task, you will add items to the table using the Tree method.
@@ -253,7 +253,7 @@ When you finish, your item should look similar to:
 
 11. Click Save
 
-Task 3: Add Items via JSON [step5]
+Task 3: Add Items via JSON 
 --------------------------
 
 In this task, you will add an item as JSON.
@@ -267,7 +267,7 @@ In this task, you will add an item as JSON.
 
 14. Copy and paste this JSON code into the editor:
 
-``` {.highlight .json}
+```
 {
     "SuperHero": "Superman",
     "Villain1": "Doomsday",
@@ -284,7 +284,7 @@ In this task, you will add an item as JSON.
 
 **Third item:**
 
-``` {.highlight .json}
+```
 {
     "SuperHero": "The Winchester Brothers",
     "Villain1": "Vampires",
@@ -297,7 +297,7 @@ In this task, you will add an item as JSON.
 
 **Fourth item:**
 
-``` {.highlight .json}
+```
 {
     "SuperHero": "Iron Man",
     "Villain1": "Apocalypse",
@@ -311,7 +311,7 @@ In this task, you will add an item as JSON.
 Congratulations! You learned how to enter data into a DynamoDB table
 using the AWS Management Console, using two different methods.
 
-Task 4: Review IAM Policies and Roles [step6]
+Task 4: Review IAM Policies and Roles 
 -------------------------------------
 
 In this task you will review the two IAM policies that will be used to
@@ -332,7 +332,7 @@ Details of the policy will appear.
 
 The policy will look similar to:
 
-``` {.highlight .json}
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -366,7 +366,7 @@ Details of the policy will appear.
 
 The policy will look similar to:
 
-``` {.highlight .json}
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -404,7 +404,7 @@ DynamoDB table, learned how to add different types of items to your
 table, and reviewed IAM policies and roles that you will use later to
 query the data.
 
-Conclusion [step7]
+Conclusion 
 ----------
 
 Congratulations! You have completed this lab. You now know how to:
@@ -413,7 +413,7 @@ Congratulations! You have completed this lab. You now know how to:
 -   Create different types of items in the table
 -   Secure access to your DynamoDB tables using IAM policies and roles
 
-End Lab [step8]
+End Lab 
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the

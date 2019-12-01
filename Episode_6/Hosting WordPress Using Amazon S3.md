@@ -1,4 +1,4 @@
-Hosting WordPress Using Amazon S3 {.headline-5}
+Hosting WordPress Using Amazon S3
 =================================
 
 - Overview
@@ -11,7 +11,7 @@ Hosting WordPress Using Amazon S3 {.headline-5}
 - Task 6: Using scripts to upload changes to Amazon S3
 - Conclusion
 
-Overview [step1]
+Overview 
 --------
 
 This lab demonstrates how to use Amazon S3 for static website hosting.
@@ -99,7 +99,7 @@ different AWS account:**
 -   Close your browser tab to return to your initial Qwiklabs window
 -   Click Open Console again
 
-Task 1: Configure WordPress on Amazon EC2 [step3]
+Task 1: Configure WordPress on Amazon EC2 
 -----------------------------------------
 
 An Amazon EC2 instance containing WordPress has been automatically
@@ -158,7 +158,7 @@ Your website is displayed. Scroll down to view your blog post.
 
 ** Leave this browser tab open. You will use it again later.
 
-Task 2: Create an Amazon S3 static website [step4]
+Task 2: Create an Amazon S3 static website 
 ------------------------------------------
 
 In this task, you create an Amazon S3 bucket and configure it for static
@@ -229,7 +229,7 @@ It will look similar to:
 Your Amazon S3 bucket is now ready to receive content from your
 Wordpress website.
 
-Task 3: Log in to your Amazon EC2 instance [step5]
+Task 3: Log in to your Amazon EC2 instance 
 ------------------------------------------
 
 In this task, you log in to your Amazon EC2 instance. The Public IP
@@ -298,7 +298,7 @@ These instructions are for Mac/Linux users only.
 
 35. Copy this command to a text editor:
 
-``` {.highlight .plaintext}
+```
 chmod 400 KEYPAIR.pem
 
 ssh -i KEYPAIR.pem ec2-user@IpAddress
@@ -325,7 +325,7 @@ prompted for a password.
 
 You are now logged into your **Web Server** instance.
 
-Task 4: Generate a static version of WordPress [step6]
+Task 4: Generate a static version of WordPress 
 ----------------------------------------------
 
 In this task, you will use the **wp-static** utility to generate a
@@ -339,14 +339,14 @@ at the end of this guide.
 41. Copy and paste these commands into your SSH window to configure the
     Apache web server to allow permlinks override:
 
-``` {.highlight .plaintext}
+```
 sudo sed -i.bak -e 's/AllowOverride None/AllowOverride All/g' /etc/httpd/conf/httpd.conf;
 ```
 
 42. Copy and paste this command into your SSH window to restart the
     Apache web server:
 
-``` {.highlight .plaintext}
+```
 sudo service httpd restart
 ```
 
@@ -354,7 +354,7 @@ sudo service httpd restart
     *wpstatic* tool and generate a static HTML version of the WordPress
     web site:
 
-``` {.highlight .plaintext}
+```
 cd /var/www/html/wordpress;
 sudo wget https://us-west-2-aws-training.s3.amazonaws.com/awsu-spl/spl-39/scripts/wpstatic.sh;
 sudo /bin/sh wpstatic.sh -a;
@@ -368,7 +368,7 @@ commands.
     webserver user account the owner of the files created by the
     wpstatic.sh script in /var/www/html/wordpress/:
 
-``` {.highlight .plaintext}
+```
 sudo chown -R apache:apache /var/www/html/wordpress
 ```
 
@@ -384,7 +384,7 @@ You will be presented with your WordPress website, but by examining the
 page URLs you will notice that it is now being served as static HTML
 pages. WordPress is not involved in serving these static pages.
 
-Task 5: Uploading static WordPress pages to Amazon S3 [step7]
+Task 5: Uploading static WordPress pages to Amazon S3 
 -----------------------------------------------------
 
 In this task, you use the AWS Command Line Interface (AWS CLI) to copy
@@ -401,7 +401,7 @@ This has several advantages for your users:
 47. Copy and paste these commands into your SSH window to retrieve the
     name of AWS region and the name of your Amazon S3 bucket:
 
-``` {.highlight .plaintext}
+```
 # Determine Region
 AZ=`curl --silent http://169.254.169.254/latest/meta-data/placement/availability-zone/`
 REGION=${AZ::-1}
@@ -413,7 +413,7 @@ BUCKET=`aws s3api list-buckets --query "Buckets[?starts_with(Name, 'wordpress-')
 48. Copy and paste this command into your SSH window to copy the static
     files to your Amazon S3 hosted website:
 
-``` {.highlight .plaintext}
+```
 aws s3 sync --acl public-read /var/www/html/wordpress/wordpress-static s3://$BUCKET
 ```
 
@@ -427,7 +427,7 @@ into a Text Editor. It should look something like:
 the S3 console, click **Static website hosting** and then click the
 **Endpoint** that is displayed.
 
-Task 6: Using scripts to upload changes to Amazon S3 [step8]
+Task 6: Using scripts to upload changes to Amazon S3 
 ----------------------------------------------------
 
 Now that you have created a static version of your website and have
@@ -439,7 +439,7 @@ replace running each command manually.
     shell script that extracts the pages from WordPress and copy them to
     your Amazon S3 bucket:
 
-``` {.highlight .plaintext}
+```
 echo "cd /var/www/html/wordpress; sudo rm -rf wordpress-static; sudo /bin/sh wpstatic.sh -a; aws s3 sync --acl public-read --delete /var/www/html/wordpress/wordpress-static s3://$BUCKET" > $HOME/wordpress-to-s3.sh;
 
 chmod 0755 $HOME/wordpress-to-s3.sh;
@@ -461,7 +461,7 @@ confirm that the content is being copied to Amazon S3.
 53. Copy and paste this command into your ssh session to execute the
     script you created previously:
 
-``` {.highlight .plaintext}
+```
 /home/ec2-user/wordpress-to-s3.sh
 ```
 
@@ -487,7 +487,7 @@ Congratulations! You have now successfully:
 -   Exported WordPress to static files.
 -   Copied static files to an Amazon S3 static website.
 
-Some things to consider [step10]
+Some things to consider 
 -----------------------
 
 **Turning off the Amazon EC2 instance:** Once your static pages have
