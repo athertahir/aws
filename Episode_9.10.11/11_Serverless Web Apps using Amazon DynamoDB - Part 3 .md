@@ -247,8 +247,8 @@ this example for your lab.
 
 15. Click the **New API** radio button, then configure:
 
--   **API name:**
--   **Description:**
+-   **API name:** `SuperheroesMission`
+-   **Description:** `Demo`
 -   Click Create API
 
 You will see what looks like a file explorer.
@@ -261,7 +261,7 @@ This is the root of the folder.
 
 17. On the Actions menu, click **Create Resource**, then configure:
 
--   **Resource Name:**
+-   **Resource Name:** `getheroeslist`
 -   Click Create Resource
 
 Next you will create another child resource.
@@ -271,7 +271,7 @@ Next you will create another child resource.
 19. On the Actions menu, click click **Create Resource**, then
     configure:
 
--   **Resource Name:**
+-   **Resource Name:** `getmissiondetails`
 -   Click Create Resource
 
 ### Create getheroeslist Method
@@ -285,7 +285,7 @@ ways.
 
 21. On the Actions menu, click **Create Method**, then configure:
 
--   Click the drop-down ** arrow and select **POST**
+-   Click the drop-down arrow and select **POST**
 -   Click the **check mark** next to **POST**
 
 Next you will set up your method.
@@ -294,7 +294,7 @@ In the **Post - Setup** window, configure:
 
 -   **Integration type:** **Lambda Function**
 -   **Lambda Region:** *us-east-1*
--   **Lambda Function:**
+-   **Lambda Function:** ``
 -   Click Save
 
 You will see a warning that you are about to give the API Gateway
@@ -308,7 +308,7 @@ service permission to invoke your Lambda function.
 
 24. On the Actions menu, click **Create Method**, then configure:
 
--   Click the drop-down ** arrow and select **POST**.
+-   Click the drop-down arrow and select **POST**.
 -   Click the **check mark** next to **POST**.
 
 In the **Post - Setup** window, configure:
@@ -353,7 +353,7 @@ HTTP requests to servers with a different domain/origin.
 33. On the Actions menu, click **Deploy API**, then configure:
 
 -   **Deployment stage:** *New Stage*
--   **Stage name:**
+-   **Stage name:** `Demo1`
 -   Click Deploy
 
 ** Congratulations, you have deployed the API!
@@ -439,11 +439,11 @@ Task 5: Publish With S3
 
 49. Below **Pubic access settings for this bucket**, click Edit.
 
-50. De-select ** all of the boxes.
+50. De-select all of the boxes.
 
 51. Click Save then:
 
--   Enter
+-   Enter `confirm`
 -   Click Confirm
 
 52. Click Bucket Policy
@@ -474,7 +474,7 @@ Task 5: Publish With S3
 57. Click **Static website hosting**, then configure:
 
 -   Select **Use this bucket to host a website**.
--   **Index document:**
+-   **Index document:** `index.html`
 -   Click Save
 
 58. click the **Overview** tab, then:
@@ -494,7 +494,7 @@ This will upload the foder and its contents to your S3 bucket.
 
 61. Open a new browser tab/window, then:
 
--   Paste the following URL:
+-   Paste the following URL: `http://BUCKET.s3-website-us-east-1.amazonaws.com/apiGateway-js-sdk/index.html`
 -   Replace **BUCKET** with the name of your bucket
 -   Press **Enter**
 

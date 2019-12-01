@@ -102,7 +102,7 @@ While you are waiting, look in the **Events** tab to view the work being perform
 
 10. Click the **Stack info** tab.
 
-11. Wait until the status changes to ***CREATE\_COMPLETE***. Click the Refresh ** icon every 30 seconds to update the status.
+11. Wait until the status changes to ***CREATE\_COMPLETE***. Click the Refresh icon every 30 seconds to update the status.
 
 When the stack status is ***CREATE\_COMPLETE***, it means that the resources have been created.
 

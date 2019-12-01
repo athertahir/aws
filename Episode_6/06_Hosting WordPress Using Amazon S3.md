@@ -83,10 +83,10 @@ The WordPress configuration page displays.
 5.  Configure the following values:
 
 -   **Site Title:** Enter any title you wish
--   **Username:**
--   **Password:**
+-   **Username:** `student`
+-   **Password:** `student123`
 -   **Confirm Password:** Select ** Confirm use of weak password
--   **Your Email:**
+-   **Your Email:** `student@example.com`
 -   **Search Engine Visibility:** Do not change
 
 6.  Click **Install WordPress**.
@@ -95,8 +95,8 @@ You are presented with a *Success* screen.
 
 7.  Click **Log In** and then log in with these credentials:
 
--   **Username:**
--   **Password:**
+-   **Username:** `student`
+-   **Password:** `student123`
 
 The WordPress dashboard displays.
 
@@ -111,11 +111,11 @@ You can now create a blog post to add information to your website.
 
 You can now view your website.
 
-11. Click the ** icon in the top-left of the screen.
+11. Click the icon in the top-left of the screen.
 
 Your website is displayed. Scroll down to view your blog post.
 
-** Leave this browser tab open. You will use it again later.
+Leave this browser tab open. You will use it again later.
 
 Task 2: Create an Amazon S3 static website
 ------------------------------------------
@@ -130,7 +130,7 @@ version of your WordPress website.
 12. Return to the browser tab containing the AWS Management Console that
     you opened at the start of this lab.
 
-** If you cannot find the correct browser tab, click the **Open
+If you cannot find the correct browser tab, click the **Open
 Console** button on the left of this page to open a new tab with the AWS
 Management Console.
 
@@ -138,7 +138,7 @@ Management Console.
 
 14. Click ** Create bucket then configure:
 
--   **Bucket name:**
+-   **Bucket name:** `wordpress-NUMBER`
 -   Replace **NUMBER** with a random number
 -   Click Create
 
@@ -157,7 +157,7 @@ try again until it works.
 18. **Deselect** the **Block *all* public access** option, and then
     leave all other options **deselected**.
 
-** Notice all of the individual options remain deselected. When
+Notice all of the individual options remain deselected. When
 deselecting all public access, you must then select the individual
 options that apply to your situation and security objectives. In a
 production environment, it is recommended to use the least permissive
@@ -165,7 +165,7 @@ settings possible.
 
 19. Click Save
 
-20. A dialogue box opens asking you to confirm your changes. Type in the
+20. A dialogue box opens asking you to confirm your changes. Type `confirm` in the
     field, and then click Confirm
 
 You will now configure the bucket for static website hosting.
@@ -182,7 +182,7 @@ It will look similar to:
 24. In the **Static website hosting** dialog box:
 
 -   Select **Use this bucket to host a website**
--   **Index document:**
+-   **Index document:** `index.html`
 -   Click Save
 
 Your Amazon S3 bucket is now ready to receive content from your
@@ -240,7 +240,7 @@ If you do not see **PublicIP**, wait a few minutes for it to appear.
 
 30. Click **Yes**, to trust the host and connect to it.
 
-31. When prompted **login as**, enter .
+31. When prompted **login as**, enter `ec2-user`.
 
 This will connect to your EC2 instance.
 
@@ -276,7 +276,7 @@ If you do not see the **PublicIP**, wait a few minutes for it to appear.
 
 39. Paste the updated command into the Terminal window and run it.
 
-40. Type when prompted to allow a first connection to this remote SSH
+40. Type `yes` when prompted to allow a first connection to this remote SSH
     server.
 
 Because you are using a key pair for authentication, you will not be

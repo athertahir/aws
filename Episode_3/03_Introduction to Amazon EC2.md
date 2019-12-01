@@ -174,7 +174,7 @@ The instance receives a *public DNS name* that you can use to contact the instan
 
 Your **Web Server** should be selected. The **Description** tab displays detailed information about your instance.
 
-** To view more information in the Description tab, drag the window divider upwards.
+To view more information in the Description tab, drag the window divider upwards.
 
 Review the information displayed in the **Description** tab. It includes information about the instance type, security settings and network settings.
 
@@ -202,7 +202,7 @@ This tab displays CloudWatch metrics for your instance. Currently, there are not
 
 You can click on a graph to see an expanded view.
 
-** Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances. Basic (five-minute) monitoring is enabled by default. You can enable detailed (one-minute) monitoring.
+Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances. Basic (five-minute) monitoring is enabled by default. You can enable detailed (one-minute) monitoring.
 
 1.  In the Actions ** menu, select **Instance Settings ** > **Get System Log**.
 
@@ -210,17 +210,17 @@ The System Log displays the console output of the instance, which is a valuable 
 
 1.  Scroll through the output and note that the HTTP package was installed from the **user data** that you added when you created the instance.
 
-![Console-Output](./ Console-output.png)
+![Console-Output](./Console-output.png)
 
 1.  Click Close
 
-2.  In the Actions ** menu, select **Instance Settings ** > **Get Instance Screenshot**.
+2.  In the Actions menu, select **Instance Settings ** > **Get Instance Screenshot**.
 
 This shows you what your Amazon EC2 instance console would look like if a screen were attached to it.
 
-![Screen-shot](./ Screen-shot.png)
+![Screen-shot](./Screen-shot.png)
 
-** If you are unable to reach your instance via SSH or RDP, you can capture a screenshot of your instance and view it as an image. This provides visibility as to the status of the instance, and allows for quicker troubleshooting.
+if you are unable to reach your instance via SSH or RDP, you can capture a screenshot of your instance and view it as an image. This provides visibility as to the status of the instance, and allows for quicker troubleshooting.
 
 1.  Click Close
 
@@ -278,7 +278,7 @@ As your needs change, you might find that your instance is over-utilized (too sm
 
 Before you can resize an instance, you must *stop* it.
 
-** When you stop an instance, it is shut down. There is no charge for a stopped EC2 instance, but the storage charge for attached Amazon EBS volumes remains.
+When you stop an instance, it is shut down. There is no charge for a stopped EC2 instance, but the storage charge for attached Amazon EBS volumes remains.
 
 1.  On the **EC2 Management Console**, in the left navigation pane, click **Instances**.
 

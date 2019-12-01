@@ -152,7 +152,7 @@ Task 1: Create an Amazon S3 Bucket
 
 4.  Click *Create bucket* then configure:
 
--   **Bucket name:**
+-   **Bucket name:** `mybucketNUMBER`
 -   Replace **NUMBER** with a randon number
 -   Copy your bucket to a text edior
 -   Click Create
@@ -181,7 +181,7 @@ policy language.
 
 9.  Click Save then configure:
 
--   Enter
+-   Enter `confirm`
 -   Click Confirm
 
 10. Click Bucket Policy
@@ -226,8 +226,8 @@ scalable, you will use Amazon DynamoDB to store metadata information.
 
 15. Click Create table then configure:
 
--   **Table name:**
--   **Primary key:**
+-   **Table name:** `myTable`
+-   **Primary key:** `eib`
 -   Click Create
 
 The table’s Overview tab will say “Table is being created”. The table
@@ -324,8 +324,8 @@ parameters, and start the services on the instance.
 
 25. On **Step 5**, click Add Tag then configure:
 
--   **Key:**
--   **Value:**
+-   **Key:** `Name`
+-   **Value:** `WebServer`
 
 This name, more correctly known as a tag, will appear in the console
 once the instance launches. It makes it easy to keep track of running
@@ -347,12 +347,12 @@ rule for inbound HTTP traffic.
 
 27. On **Step 6**, configure:
 
--   **Security group name:**
--   **Description:**
+-   **Security group name:** `WebServerSecurity`
+-   **Description:** `WebServerSecurity`
 
 28. Click Add Rule then configure:
 
--   **Type:**
+-   **Type:** `HTTP`
 -   **Source:** *Anywhere*
 
 This will add a default handler for HTTP that will allow requests from

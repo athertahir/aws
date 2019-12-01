@@ -166,12 +166,12 @@ same DynamoDB table.
 
 6.  On the Services menu, click **Lambda**.
 
-7.  Click Create function Then configure:
+7.  Click **Create function** Then configure:
 
--   **Name:**
+-   **Name:** `getheroeslist`
 -   **Runtime:** *Node.js 8.10*
 -   **Existing role:** *SuperDynamoDBScanRole*
--   Click Create function
+-   Click **Create function**
 
 8.  In the **Function code** section, remove all of the code in
     *index.js*
@@ -205,7 +205,7 @@ This function retrieves a list of super heroes stored in the
 
 12. Click Test then configure:
 
--   **Event Name:**
+-   **Event Name:** `myTest`
 -   Scroll to the bottom of the screen, then click Create
 
 13. At the top of the page, click Test
@@ -228,12 +228,12 @@ details from the SuperMission DynamoDB table.
 
 16. At the top of the page, click Functions
 
-17. Click Create function then configure:
+17. Click **Create function** then configure:
 
--   **Name:**
+-   **Name:** `getmissiondetails`
 -   **Runtime:** *Node.js 8.10*
 -   **Existing role:** *SuperDynamoDBQueryRole*
--   Click Create function
+-   Click **Create function**
 
 18. In the editor, remove all of the placeholder code.
 
@@ -276,7 +276,7 @@ This function retrieves the mission details from the DynamoDB table.
 
 23. Click Test then configure:
 
--   **Event Name:**
+-   **Event Name:** `myTest2`
 
 24. In the editor, remove all of the placeholder code.
 

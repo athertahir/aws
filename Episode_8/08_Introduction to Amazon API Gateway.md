@@ -367,7 +367,7 @@ when creating an API.
 
 14. Click Save at the top right corner.
 
-** You have successfully created the Lambda function. This has also
+You have successfully created the Lambda function. This has also
 created a default API Gateway that will trigger the Lambda function.
 
 Task 2: Test the Lambda function 
