@@ -38,8 +38,9 @@ scripts using a text editor.
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides
 resizable compute capacity in the cloud. It is designed to make
-web-scale computing easier for developers.\
- Amazon EC2’s simple web service interface allows you to obtain and
+web-scale computing easier for developers.
+
+Amazon EC2’s simple web service interface allows you to obtain and
 configure capacity with minimal friction. It provides you with complete
 control of your computing resources and lets you run on Amazon’s proven
 computing environment. Amazon EC2 reduces the time required to obtain
@@ -230,7 +231,7 @@ scalable, you will use Amazon DynamoDB to store metadata information.
 -   **Primary key:** `eib`
 -   Click Create
 
-The table’s Overview tab will say “Table is being created”. The table
+The table’s Overview tab will say "Table is being created". The table
 creation process might take a few minutes. Please proceed on to the next
 section and deploy the web server environment.
 
@@ -360,8 +361,8 @@ anywhere on the Internet.
 
 29. Click Review and Launch
 
-You may see a warning on this screen that “Your security group … is open
-to the world.” This is a result of not restricting SSH access to your
+You may see a warning on this screen that "Your security group … is open
+to the world." This is a result of not restricting SSH access to your
 instance, as described above. For the purposes of this lab only, you may
 ignore this warning.
 
@@ -444,7 +445,7 @@ bucket.
 44. Click your **mybucket**.
 
 You will see the list of image files uploaded by the application in the
-bucket along with the thumbnail images (with the “tn.png” extension).
+bucket along with the thumbnail images (with the "tn.png" extension).
 
 Architecture Overview 
 ---------------------

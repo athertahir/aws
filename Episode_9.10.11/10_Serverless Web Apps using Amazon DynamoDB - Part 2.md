@@ -71,23 +71,23 @@ maintaining consistent and fast performance.
 
 ### DynamoDB Terminology
 
-**Tables**\
+**Tables
  Similar to other database management systems, DynamoDB stores data in
 tables. A table is a collection of data. For example, in this lab you
 will work with a table named SuperMission, where mission information is
 stored.\
- **Items**\
+ **Items
  Each table contains multiple items. An item is a group of attributes
 that is uniquely identifiable among all of the other items. In the
 SuperMission table, each item represents Mission information.\
- **Attributes**\
+ **Attributes
  Each item is composed of one or more attributes. An attribute is a
 fundamental data element, something that does not need to be broken down
 any further. In the SuperMission table, items have attributes like
 SuperHero, MissionStatus, Villain1, etc. Attributes in DynamoDB are
 similar in many ways to fields or columns in other database management
 systems.\
- **Primary Key**\
+ **Primary Key
  When you create a table, in addition to the table name, you must
 specify the primary key of the table. As in other databases, a primary
 key in DynamoDB uniquely identifies each item in the table, so that no
@@ -96,7 +96,7 @@ in the table, you must specify the primary key attribute values for that
 item. The key values are required; you cannot omit them. DynamoDB
 supports two different kinds of primary keys: **Partition Key** and
 **Partition Key and Sort Key**.\
- **Secondary Indexes**\
+ **Secondary Indexes
  In DynamoDB, you can read data in a table by providing primary key
 attribute values. If you want to read the data using non-key attributes,
 you can use a secondary index to do this. After you create a secondary
@@ -296,7 +296,7 @@ This code looks for details of Batman's mission in the DynamoDB table.
 
 Near the top of the page, you will see a message telling you that
 **Execution Result: Succeeded**. Below that, there will be a text box
-displaying the mission details for “Batman”.
+displaying the mission details for "Batman".
 
 28. Expand **Details**.
 

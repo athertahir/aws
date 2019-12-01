@@ -65,8 +65,9 @@ This load balancer works at this Application Layer, hence the name.
 It also provides advanced routing features such as host-based and
 path-based routing and also works with containers and microservices.
 
-**Host-based Routing\
-**Suppose you have two websites **medium.com** and **admin.medium.com**.
+**Host-based Routing**
+
+Suppose you have two websites **medium.com** and **admin.medium.com**.
 Each website is hosted on two EC2 instances for high availability and
 you want to distribute the incoming web traffic between them.
 
@@ -78,8 +79,9 @@ But you can do the same thing using a single ALB!
 Hence you will be saving money as you will only be paying for a single
 ALB instead of two CLBs.
 
-**Path-based Routing\
-**Suppose the website of your company is **payzello.com** and the
+**Path-based Routing**
+
+Suppose the website of your company is **payzello.com** and the
 company’s blog is hosted on **payzello.com/blog**. The operations team
 has decided to host the main website and the blog on different
 instances.
@@ -112,7 +114,7 @@ enough talking, let’s go practical.
 ### Creating an Application Load Balancer
 
 We will handle a case of path-based routing. We will be handling two
-paths here, “/” and “/blog”.
+paths here, "/" and "/blog".
 
 We will launch two instances, one for handling each path. Let’s get
 started!
@@ -133,12 +135,20 @@ After launching the two instances, your dashboard should look like this.
 
 ![](./1_O717bo80fakxr2S6kwGf5A.png)
 
-**2. Install Apache server on instances\
-**Now SSH into the first instance (with name Main) and run the following
+2. **Install Apache server on instances**
+
+Now SSH into the first instance (with name Main) and run the following
 commands to install and start the apache server.
 
-`sudo yum update -ysudo yum install -y httpdsudo service httpd startsudo chkconfig httpd oncd /var/www/htmlsudo suecho "This is the Main Website" > index.html`{.markup--code
-.markup--p-code}
+```
+sudo yum update -y
+sudo yum install -y httpd
+sudo service httpd start
+sudo chkconfig httpd on
+cd /var/www/html
+sudo su
+echo "This is the Main Website" > index.html
+```
 
 Now paste the IP address of the instance in the browser and hit Enter.
 
@@ -149,7 +159,7 @@ You should see something as shown in the picture below.
 Now SSH into the second instance (with name Blog) and run the same
 commands except the last command. Instead, run the following command.
 
-`echo “This is the Blog Website” > blog`{.markup--code .markup--p-code}
+`echo "This is the Blog Website" > blog`
 
 Paste the IP address of this instance with **/blog** as the suffix in
 the browser and hit Enter. You should see something like below.
@@ -162,8 +172,9 @@ A target group allows you to tell the load balancer which protocol and
 port will receive the traffic on the registered instances.
 
 ​1. In the left navigation bar, scroll down and click on **Target
-Groups.\
-**Now click on **Create target group**at the top.
+Groups.**
+
+Now click on **Create target group**at the top.
 
 ![](./1_JXcCEa09I7EPNWi4_f-M0g.png)
 
@@ -225,7 +236,7 @@ the end.
 ![](./1_UKmqxLUKqdBO5hR7oaCyDw.png)
 
 ​8. Click the + sign at the top to add a rule. In Add Condition select
-“**Path is**” and type **/blog**.
+"**Path is**" and type **/blog**.
 
 ​9. Then in Add Action select **Forward to** and select **Blog**and then
 click**Save.**

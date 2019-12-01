@@ -142,8 +142,8 @@ be used to search for resources across an AWS account.
 
 They can also help in managing costs of resources.
 
-Here I am adding a single tag with Key of “Name” and Value as “My First
-Instance”.
+Here I am adding a single tag with Key of "Name" and Value as "My First
+Instance".
 
 Now click on **Next: Configure Security Group.**
 
@@ -205,17 +205,15 @@ continue.
 the key pair file and type the following command to change the file
 permissions.
 
-For Linux and Mac users — `sudo chmod 600 ec2keypair.pem`{.markup--code
-.markup--p-code} \
-For Windows users — `chmod 600 ec2keypair.pem`{.markup--code
-.markup--p-code}
+For Linux and Mac users — `sudo chmod 600 ec2keypair.pem` 
+
+For Windows users — `chmod 600 ec2keypair.pem`
 
 In place of ec2keypair.pem enter the name of your key pair file.
 
 ​2. Now, to log in to your ec2 instance type the following command.
 
-`ssh ec2-user@public-ip-address -i ec2keypair.pem`{.markup--code
-.markup--p-code}
+`ssh ec2-user@public-ip-address -i ec2keypair.pem`
 
 If you are prompted to type yes or no, type yes.
 
@@ -226,8 +224,12 @@ The above commands looks like the following on my terminal.
 Now type the following commands in the terminal to start an apache
 server
 
-`sudo yum update -ysudo yum install -y httpdsudo service httpd startsudo chkconfig httpd on`{.markup--code
-.markup--p-code}
+```
+sudo yum update -y
+sudo yum install -y httpd
+sudo service httpd start
+sudo chkconfig httpd on
+```
 
 Once the following commands are completed. Enter your IP in a web
 browser and press enter.
