@@ -450,7 +450,7 @@ The **Lab VPC** is no longer listed. In addition, the associated Internet Gatewa
 Conclusion [step9]
 ----------
 
-** Congratulations! You now have successfully learned how to:
+Congratulations! You now have successfully learned how to:
 
 -   Deploy an AWS CloudFormation template that creates an Amazon VPC
 -   Examine the components of the template

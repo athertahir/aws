@@ -270,7 +270,7 @@ This links should be in your text editor.
 
 You are now able to see an Amazon EC2 instance because you have Read Only permissions. However, you will not be able to make any changes to Amazon EC2 resources.
 
-** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Oregon**).
+** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
 
 ![](./region-user-2.png)
 
@@ -318,7 +318,7 @@ As an EC2 Administrator, you should now have permissions to Stop the Amazon EC2 
 
 Your EC2 instance should be selected **. If it is not, please select ** it.
 
-** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Oregon**).
+** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
 
 1.  In the **Actions** menu, click **Instance State** \> **Stop**.
 
@@ -340,7 +340,7 @@ Follow these steps to close the console, end your lab, and evaluate the experien
 Conclusion
 ----------
 
-** Congratulations! You now have successfully:
+Congratulations! You now have successfully:
 
 -   Explored pre-created IAM users and groups
 -   Inspected IAM policies as applied to the pre-created groups
