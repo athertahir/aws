@@ -12,7 +12,7 @@ Introduction to AWS Lambda {.lab-preamble__title}
 - Conclusion
 - End Lab
 
-Overview {#step1}
+Overview [step1]
 --------
 
 The lab provides a basic explanation of AWS Lambda. It will demonstrate
@@ -47,7 +47,7 @@ Start Lab
 -   Open https://808477742599.signin.aws.amazon.com/console
 -   Enter login credentials
 
-Scenario {#step3}
+Scenario [step3]
 --------
 
 This lab demonstrates AWS Lambda by creating a serverless **image
@@ -81,7 +81,7 @@ The steps in this lab will show you how to create the Amazon S3 buckets
 and the Lambda function. You will then test the service by uploading
 images for resizing.
 
-Task 1: Create the Amazon S3 Buckets {#step4}
+Task 1: Create the Amazon S3 Buckets [step4]
 ------------------------------------
 
 In this task, you will create two Amazon S3 buckets -- one for input and
@@ -151,7 +151,7 @@ Later in this lab you will invoke the Lambda function manually by
 passing sample event data to the function. The sample data will refer to
 this *HappyFace.jpg* image.
 
-Task 2: Create an AWS Lambda Function {#step5}
+Task 2: Create an AWS Lambda Function [step5]
 -------------------------------------
 
 In this task, you will create an AWS Lambda function that reads an image
@@ -282,7 +282,7 @@ explanation of these settings:
 
 Your Lambda function has now been configured.
 
-Task 3: Test Your Function {#step6}
+Task 3: Test Your Function [step6]
 --------------------------
 
 In this task, you will test your Lambda function. This is done by
@@ -352,7 +352,7 @@ The image should now be a smaller thumbnail of the original image.
 You are welcome to upload your own images to the *images-* bucket and
 then check for thumbnails in the *-resized* bucket.
 
-Task 4: Monitoring and Logging {#step7}
+Task 4: Monitoring and Logging [step7]
 ------------------------------
 
 You can monitor AWS Lambda functions to identify problems and view log
@@ -392,7 +392,7 @@ of the function and the Maximum Memory that the function used. In
 addition, any logging messages or print statements from the functions
 are displayed in the logs. This assists in debugging Lambda functions.
 
-Conclusion {#step8}
+Conclusion [step8]
 ----------
 
 Congratulations! You have successfully:
@@ -402,7 +402,7 @@ Congratulations! You have successfully:
 -   Triggered a Lambda function by uploading an object to Amazon S3
 -   Monitored AWS Lambda S3 functions through Amazon CloudWatch Log
 
-End Lab {#step9}
+End Lab [step9]
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the

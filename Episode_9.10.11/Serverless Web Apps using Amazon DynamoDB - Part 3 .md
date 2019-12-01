@@ -15,7 +15,7 @@ Serverless Web Apps using Amazon DynamoDB - Part 3 {.lab-preamble__title}
 - Task 5: Publish With S3
 - End Lab
 
-Overview {#step1}
+Overview [step1]
 --------
 
 Complete your mission! In this lab, you will complete and publish a
@@ -28,7 +28,7 @@ public website to retrieve information from your DynamoDB table via
 Lambda functions, using what you learned in all three labs to send super
 heroes off to save the world!
 
-Topics covered {#step2}
+Topics covered [step2]
 --------------
 
 By the end of this lab you will be able to:
@@ -40,7 +40,7 @@ By the end of this lab you will be able to:
 
 ... and give super heroes details about the missions they face!
 
-Lab Pre-requisites {#step3}
+Lab Pre-requisites [step3]
 ------------------
 
 You should familiarize yourself with key concepts by taking the
@@ -57,7 +57,7 @@ prior to this lab is the best learning experience.
 The qwikLABS lab environment is not accessible using an iPad or tablet
 device, but you can use these devices to view the lab instructions.
 
-Other AWS Services {#step4}
+Other AWS Services [step4]
 ------------------
 
 Other AWS Services than the ones needed for this lab are disabled by an
@@ -138,11 +138,11 @@ For documentation, see
 For pricing details, see
 [https://aws.amazon.com/api-gateway/pricing/](https://aws.amazon.com/api-gateway/pricing/).
 
-Start Lab {#step5}
+Start Lab [step5]
 ---------
 
 
-Task 1: Verify Your Region {#step6}
+Task 1: Verify Your Region [step6]
 --------------------------
 
 With Amazon EC2, you can place instances in multiple locations. Amazon
@@ -162,7 +162,7 @@ click the region name and select "N. Virginia".
 
 **Important** Make sure your region is set to "N. Virginia".
 
-Task 2: Verify Resources {#step7}
+Task 2: Verify Resources [step7]
 ------------------------
 
 3.  In the **AWS Management Console**, on the Services menu, click
@@ -225,7 +225,7 @@ You will see two IAM roles: *SuperDynamoDBScanRole* and
     **SuperDynamoDBScanRole**
 -   What does this policy allow?
 
-Task 3: Create and Deploy an API {#step8}
+Task 3: Create and Deploy an API [step8]
 --------------------------------
 
 In this task of the lab, you will learn how to create and configure a
@@ -359,7 +359,7 @@ HTTP requests to servers with a different domain/origin.
 
 ** Congratulations, you have deployed the API!
 
-Task 4: Generate the SDK For Your API {#step9}
+Task 4: Generate the SDK For Your API [step9]
 -------------------------------------
 
 In this task, you will generate the SDK for your API. After deploying
@@ -420,7 +420,7 @@ display the Mission Status and Mission Dossier
 Congratulations! You successfully developed the contents of your
 website. You're almost ready to start sending super heroes on missions!
 
-Task 5: Publish With S3 {#step10}
+Task 5: Publish With S3 [step10]
 -----------------------
 
 45. On the Services menu, click **S3**.

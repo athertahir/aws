@@ -88,7 +88,7 @@ Errors or corrections? Email us at
 Other questions? Contact us at
 [https://aws.amazon.com/contact-us/aws-training/](https://aws.amazon.com/contact-us/aws-training/)
 
-Overview {#step1}
+Overview [step1]
 --------
 
 In this lab, you will create a simple FAQ micro-service. The
@@ -123,7 +123,7 @@ required by the lab and in some cases are even further limited as an
 intentional aspect of the lab design. Expect errors when accessing other
 services or performing actions beyond those provided in this lab guide.
 
-Technical Concepts {#step2}
+Technical Concepts [step2]
 ------------------
 
 ### Microservice Architecture
@@ -328,7 +328,7 @@ deploying and maintaining APIs easy. API Gateway includes features to:
 -   **Blueprint:** A Lambda blueprint is an example lambda function that
     can be used as a base to build out new Lambda functions.
 
-Start Lab {#step3}
+Start Lab [step3]
 ---------
 
 1.  At the top of your screen, launch your lab by clicking Start Lab
@@ -372,7 +372,7 @@ different AWS account:**
 -   Close your browser tab to return to your initial Qwiklabs window
 -   Click Open Console again
 
-Task 1: Create a Lambda Function {#step4}
+Task 1: Create a Lambda Function [step4]
 --------------------------------
 
 3.  In the **AWS Management Console**, on the Services menu, click
@@ -519,7 +519,7 @@ when creating an API.
 ** You have successfully created the Lambda function. This has also
 created a default API Gateway that will trigger the Lambda function.
 
-Task 2: Test the Lambda function {#step5}
+Task 2: Test the Lambda function [step5]
 --------------------------------
 
 You will be presented with the FAQ Lambda function page.
@@ -576,7 +576,7 @@ You will be presented with the same event data that was displayed in the
 Lambda Management Console. Examine the contents of each line to view the
 log information.
 
-Conclusion {#step6}
+Conclusion [step6]
 ----------
 
 Congratulations! You have completed this lab and have successfully
@@ -587,7 +587,7 @@ know how to:
 -   Create an Amazon API Gateway endpoints
 -   Debug API Gateway and Lambda with Amazon CloudWatch
 
-End Lab {#step7}
+End Lab [step7]
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the
@@ -616,7 +616,7 @@ experience.
 
 You may close the dialog if you don't want to provide feedback.
 
-Next Steps {#step8}
+Next Steps [step8]
 ----------
 
 This lab was intended to provide an introduction into microservices
@@ -637,7 +637,7 @@ microservice in your own AWS account:
     [Apex](https://github.com/apex/apex) or
     [Serverless](https://github.com/serverless/serverless).
 
-Additional Resources {#step9}
+Additional Resources [step9]
 --------------------
 
 -   [Best Practices for a Pragmatic RESTful

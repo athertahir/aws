@@ -11,7 +11,7 @@ Hosting WordPress Using Amazon S3 {.headline-5}
 - Task 6: Using scripts to upload changes to Amazon S3
 - Conclusion
 
-Overview {#step1}
+Overview [step1]
 --------
 
 This lab demonstrates how to use Amazon S3 for static website hosting.
@@ -99,7 +99,7 @@ different AWS account:**
 -   Close your browser tab to return to your initial Qwiklabs window
 -   Click Open Console again
 
-Task 1: Configure WordPress on Amazon EC2 {#step3}
+Task 1: Configure WordPress on Amazon EC2 [step3]
 -----------------------------------------
 
 An Amazon EC2 instance containing WordPress has been automatically
@@ -158,7 +158,7 @@ Your website is displayed. Scroll down to view your blog post.
 
 ** Leave this browser tab open. You will use it again later.
 
-Task 2: Create an Amazon S3 static website {#step4}
+Task 2: Create an Amazon S3 static website [step4]
 ------------------------------------------
 
 In this task, you create an Amazon S3 bucket and configure it for static
@@ -229,7 +229,7 @@ It will look similar to:
 Your Amazon S3 bucket is now ready to receive content from your
 Wordpress website.
 
-Task 3: Log in to your Amazon EC2 instance {#step5}
+Task 3: Log in to your Amazon EC2 instance [step5]
 ------------------------------------------
 
 In this task, you log in to your Amazon EC2 instance. The Public IP
@@ -325,7 +325,7 @@ prompted for a password.
 
 You are now logged into your **Web Server** instance.
 
-Task 4: Generate a static version of WordPress {#step6}
+Task 4: Generate a static version of WordPress [step6]
 ----------------------------------------------
 
 In this task, you will use the **wp-static** utility to generate a
@@ -384,7 +384,7 @@ You will be presented with your WordPress website, but by examining the
 page URLs you will notice that it is now being served as static HTML
 pages. WordPress is not involved in serving these static pages.
 
-Task 5: Uploading static WordPress pages to Amazon S3 {#step7}
+Task 5: Uploading static WordPress pages to Amazon S3 [step7]
 -----------------------------------------------------
 
 In this task, you use the AWS Command Line Interface (AWS CLI) to copy
@@ -427,7 +427,7 @@ into a Text Editor. It should look something like:
 the S3 console, click **Static website hosting** and then click the
 **Endpoint** that is displayed.
 
-Task 6: Using scripts to upload changes to Amazon S3 {#step8}
+Task 6: Using scripts to upload changes to Amazon S3 [step8]
 ----------------------------------------------------
 
 Now that you have created a static version of your website and have
@@ -478,7 +478,7 @@ saved into a Text Editor. It should look something like:
 the S3 Management Console, click **Static website hosting** and click
 the **Endpoint** that is displayed.
 
-Conclusion {#step9}
+Conclusion [step9]
 ----------
 
 Congratulations! You have now successfully:
@@ -487,7 +487,7 @@ Congratulations! You have now successfully:
 -   Exported WordPress to static files.
 -   Copied static files to an Amazon S3 static website.
 
-Some things to consider {#step10}
+Some things to consider [step10]
 -----------------------
 
 **Turning off the Amazon EC2 instance:** Once your static pages have

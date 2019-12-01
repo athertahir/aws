@@ -4,7 +4,7 @@ Building a Media Sharing Website - Part 1: Media Upload {.headline-5}
 Building a Media Sharing Website - Part 1: Media Upload {.lab-preamble__title}
 =======================================================
 
-Lab Overview {#step1}
+Lab Overview [step1]
 ------------
 
 In this lab, you will learn how to deploy a photo sharing website using
@@ -27,7 +27,7 @@ By the end of this lab, you will be able to:
 -   Launch a new Amazon EC2 instance to run your web server
 -   Create an Amazon DynamoDB database to hold your data
 
-Lab Pre-requisites {#step2}
+Lab Pre-requisites [step2]
 ------------------
 
 To successfully complete this lab, you should be familiar with basic
@@ -192,7 +192,7 @@ whether you use many buckets or just a few. You can store all of your
 objects in a single bucket, or you can organize them across several
 buckets.
 
-Task 1: Create an Amazon S3 Bucket {#step4}
+Task 1: Create an Amazon S3 Bucket [step4]
 ----------------------------------
 
 ### Create a Bucket
@@ -261,7 +261,7 @@ policy language.
 
 13. Click Save
 
-Task 2: Create the Media Database {#step5}
+Task 2: Create the Media Database [step5]
 ---------------------------------
 
 For each entry, you need to store metadata information such as the
@@ -284,7 +284,7 @@ The table’s Overview tab will say “Table is being created”. The table
 creation process might take a few minutes. Please proceed on to the next
 section and deploy the web server environment.
 
-Task 3: Create the Web Front-End {#step6}
+Task 3: Create the Web Front-End [step6]
 --------------------------------
 
 In this task, you will use an Amazon EC2 instance to host the web
@@ -451,7 +451,7 @@ refresh the status.
 When it is running and has passed status checks, continue on to the next
 section.
 
-Task 4: Test the Deployment {#step7}
+Task 4: Test the Deployment [step7]
 ---------------------------
 
 ### Retrieve Your Host’s Public DNS Address
@@ -496,7 +496,7 @@ bucket.
 You will see the list of image files uploaded by the application in the
 bucket along with the thumbnail images (with the “tn.png” extension).
 
-Architecture Overview {#step8}
+Architecture Overview [step8]
 ---------------------
 
 So far, you created the following system:
@@ -514,7 +514,7 @@ system is not accessible and cannot recover) and a bottleneck (with an
 important load of incoming requests, the system might even become
 unavailable).
 
-End Lab {#step9}
+End Lab [step9]
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the
@@ -525,7 +525,7 @@ experience.
 46. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**,
     and then click **Sign Out**.
 
-Conclusion {#step10}
+Conclusion [step10]
 ----------
 
 Congratulations! You now have successfully:
