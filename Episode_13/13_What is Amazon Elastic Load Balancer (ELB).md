@@ -171,10 +171,9 @@ the browser and hit Enter. You should see something like below.
 A target group allows you to tell the load balancer which protocol and
 port will receive the traffic on the registered instances.
 
-​1. In the left navigation bar, scroll down and click on **Target
-Groups.**
+​1. In the left navigation bar, scroll down and click on **Target Groups.**
 
-Now click on **Create target group**at the top.
+Now click on **Create target group** at the top.
 
 ![](./1_JXcCEa09I7EPNWi4_f-M0g.png)
 
@@ -182,7 +181,7 @@ Now click on **Create target group**at the top.
 
 ![](./1_JnxAqJSWIjkvWTPWKesQuw.png)
 
-​3. Now, navigate to the **Targets**tab at the bottom, click on
+​3. Now, navigate to the **Targets** tab at the bottom, click on
 **Edit,**select the Main instance, click **Add to registered**and
 click**Save.**
 
@@ -210,14 +209,14 @@ Configure Security Settings**button.
 
 ​3. You may see a warning message but that is because we are only
 listening for HTTP traffic which is fine for our case, so click on the
-**Next: Configure Security Groups**button again.
+**Next: Configure Security Groups** button again.
 
 ​4. Here select the existing group option and select the same security
 group that you assigned to the instances you launched. Once done click
 on **Next: Configure Routing** button.
 
 ​5. In Target groups, select the existing target group. In the name
-select **Main**and click**Next.**
+select **Main** and click **Next.**
 
 ![](./1_lULiZrAjBn7__OB5Avzwmg.png)
 

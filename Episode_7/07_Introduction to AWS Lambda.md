@@ -380,7 +380,7 @@ Logs**.
 
 37. Click the **Log Stream** that appears.
 
-38. Expand ** each message to view the log message details.
+38. Expand each message to view the log message details.
 
 The Event Data includes the Request Id, the duration (in milliseconds),
 the billed duration (rounded up to the nearest 100 ms, the Memory Size

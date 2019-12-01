@@ -159,7 +159,7 @@ instance once it is running.
 HTTP and HTTPS ports are opened since we are going to install an apache
 server on our instance once it’s running.
 
-In the source tab you can see that we have entered **0.0.0.0/0**to allow
+In the source tab you can see that we have entered **0.0.0.0/0** to allow
 our instance to accept traffic from anywhere on the internet. This is
 the reason why we are seeing the warning on the screen.
 
@@ -185,8 +185,7 @@ button.
 
 ![](./1_7DjVGYwN2bSLfN6g3j828Q.png)
 
-We can see that our instance is now launching, click on **View
-Instances** and wait a few minutes until the instance is running.
+We can see that our instance is now launching, click on **View Instances** and wait a few minutes until the instance is running.
 
 ![](./1_evNE8FCAcsW9Hx0FDh-TnA.png)
 
@@ -221,8 +220,7 @@ The above commands looks like the following on my terminal.
 
 ![](./1_M3d_gak90cyn6hZ4wiUMAw.png)
 
-Now type the following commands in the terminal to start an apache
-server
+Now type the following commands in the terminal to start an apache server.
 
 ```
 sudo yum update -y
