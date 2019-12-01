@@ -52,7 +52,7 @@ thumbnail application**.
 
 The following diagram illustrates the application flow:
 
-![Overview 1](./Introduction%20to%20AWS%20Lambda_files/overview1.png)
+![Overview 1](./overview1.png)
 
 1 A user uploads an object to the source bucket in **Amazon S3**
 (object-created event).
@@ -72,7 +72,7 @@ thumbnail to the target bucket.
 Upon completing this tutorial, you will have the following resources in
 your account:
 
-![Overview 2](./Introduction%20to%20AWS%20Lambda_files/overview2.png)
+![Overview 2](./overview2.png)
 
 The steps in this lab will show you how to create the Amazon S3 buckets
 and the Lambda function. You will then test the service by uploading
@@ -198,7 +198,7 @@ function whenever a new object is created in your Amazon S3 bucket.
 
 20. Click **Create-Thumbnail** at the top of the diagram:
 
-![](./Introduction%20to%20AWS%20Lambda_files/create-thumbnail-button.png)
+![](./create-thumbnail-button.png)
 
 You will now configure the Lambda function.
 
@@ -301,12 +301,12 @@ earlier.
 
 Be sure to replace **example-bucket** in both locations.
 
-![bucket](./Introduction%20to%20AWS%20Lambda_files/bucket.png)
+![bucket](./bucket.png)
 
 27. Replace **test/key** with the name of the picture that you uploaded.
     This should be
 
-![key](./Introduction%20to%20AWS%20Lambda_files/key.png)
+![key](./key.png)
 
 28. Click Create
 

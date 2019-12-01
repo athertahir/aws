@@ -135,9 +135,11 @@ For documentation, see
 For pricing details, see
 [https://aws.amazon.com/api-gateway/pricing/](https://aws.amazon.com/api-gateway/pricing/).
 
-Start Lab 
+Start Lab
 ---------
 
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
 Task 1: Verify Your Region 
 --------------------------

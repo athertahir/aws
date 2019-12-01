@@ -163,8 +163,11 @@ for Lambda at
 For pricing details, see
 [https://aws.amazon.com/lambda/pricing/](https://aws.amazon.com/lambda/pricing/).
 
-Start Lab 
+Start Lab
 ---------
+
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
 
 Task 1: Create Your DynamoDB Table 
@@ -226,7 +229,7 @@ Field | Value
 
 When you finish, your item should look similar to:
 
-![output](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%201_files/output.png)
+![output](./output.png)
 
 11. Click Save
 

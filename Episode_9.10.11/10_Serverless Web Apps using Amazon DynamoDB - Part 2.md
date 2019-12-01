@@ -128,8 +128,12 @@ and Amazon DynamoDB, process streaming data stored in Amazon Kinesis, or
 create your own back end that operates at AWS scale, performance, and
 security.
 
-Start Lab 
+Start Lab
 ---------
+
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
+
 
 Task 1: Check CloudFormation Status 
 -----------------------------------

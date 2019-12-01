@@ -1,4 +1,4 @@
-Building a Media Sharing Website - Part 1: Media Upload
+Building a Media Sharing Website - Part 1: Media Upload {.headline-5}
 =======================================================
 
 Building a Media Sharing Website - Part 1: Media Upload
@@ -124,56 +124,6 @@ Start Lab
 
 -   Open https://808477742599.signin.aws.amazon.com/console
 -   Enter login credentials
-
-Notice the lab properties below the lab title:
-
--   **setup -** The estimated time to set up the lab environment
--   **access -** The time the lab will run before automatically shutting
-    down
--   **completion -** The estimated time the lab should take to complete
-
-1.  At the top of your screen, launch your lab by clicking Start Lab
-
-If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-A status bar shows the progress of the lab environment creation process.
-The AWS Management Console is accessible during lab resource creation,
-but your AWS resources may not be fully available until the process is
-complete.
-
-![](./05_Building%20a%20Media%20Sharing%20Website%20-%20Part%201_%20Media%20Upload_files/loading.png)
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-**Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./05_Building%20a%20Media%20Sharing%20Website%20-%20Part%201_%20Media%20Upload_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./05_Building%20a%20Media%20Sharing%20Website%20-%20Part%201_%20Media%20Upload_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
 
 **Media storage**
 
@@ -467,7 +417,7 @@ Task 4: Test the Deployment
 
 You should see the home page of the web application:
 
-![flicks](./05_Building%20a%20Media%20Sharing%20Website%20-%20Part%201_%20Media%20Upload_files/flicks.png)
+![flicks](./flicks.png)
 
 38. Add a couple of images to the application by clicking **New**, then
     suppliying:
@@ -501,7 +451,7 @@ Architecture Overview
 
 So far, you created the following system:
 
-![architecture](./05_Building%20a%20Media%20Sharing%20Website%20-%20Part%201_%20Media%20Upload_files/arch.gif)
+![architecture](./arch.gif)
 
 When the user uploads an image, the web server receives it and creates a
 thumbnail. It will then upload the image and the thumbnail to the Amazon

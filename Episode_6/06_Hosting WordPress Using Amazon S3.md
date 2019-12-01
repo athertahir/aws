@@ -11,7 +11,7 @@ Hosting WordPress Using Amazon S3
 - Task 6: Using scripts to upload changes to Amazon S3
 - Conclusion
 
-Overview 
+Overview
 --------
 
 This lab demonstrates how to use Amazon S3 for static website hosting.
@@ -36,7 +36,7 @@ convert your WordPress site to a static website. This has the advantage
 of dramatically reducing the hosting cost for a website while supporting
 a large-scale user base.
 
-![Overview](./Hosting%20WordPress%20Using%20Amazon%20S3_files/overview.jpg)
+![Overview](./overview.jpg)
 
 ### Topics covered
 
@@ -58,48 +58,7 @@ Start Lab
 -   Open https://808477742599.signin.aws.amazon.com/console
 -   Enter login credentials
 
-1.  At the top of your screen, launch your lab by clicking Start Lab
-
-This will start the process of provisioning your lab resources. An
-estimated amount of time to provision your lab resources will be
-displayed. You must wait for your resources to be provisioned before
-continuing.
-
-** If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-**Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./Hosting%20WordPress%20Using%20Amazon%20S3_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./Hosting%20WordPress%20Using%20Amazon%20S3_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
-
-Task 1: Configure WordPress on Amazon EC2 
+Task 1: Configure WordPress on Amazon EC2
 -----------------------------------------
 
 An Amazon EC2 instance containing WordPress has been automatically
@@ -158,7 +117,7 @@ Your website is displayed. Scroll down to view your blog post.
 
 ** Leave this browser tab open. You will use it again later.
 
-Task 2: Create an Amazon S3 static website 
+Task 2: Create an Amazon S3 static website
 ------------------------------------------
 
 In this task, you create an Amazon S3 bucket and configure it for static
@@ -229,7 +188,7 @@ It will look similar to:
 Your Amazon S3 bucket is now ready to receive content from your
 Wordpress website.
 
-Task 3: Log in to your Amazon EC2 instance 
+Task 3: Log in to your Amazon EC2 instance
 ------------------------------------------
 
 In this task, you log in to your Amazon EC2 instance. The Public IP
@@ -325,7 +284,7 @@ prompted for a password.
 
 You are now logged into your **Web Server** instance.
 
-Task 4: Generate a static version of WordPress 
+Task 4: Generate a static version of WordPress
 ----------------------------------------------
 
 In this task, you will use the **wp-static** utility to generate a
@@ -384,7 +343,7 @@ You will be presented with your WordPress website, but by examining the
 page URLs you will notice that it is now being served as static HTML
 pages. WordPress is not involved in serving these static pages.
 
-Task 5: Uploading static WordPress pages to Amazon S3 
+Task 5: Uploading static WordPress pages to Amazon S3
 -----------------------------------------------------
 
 In this task, you use the AWS Command Line Interface (AWS CLI) to copy
@@ -427,7 +386,7 @@ into a Text Editor. It should look something like:
 the S3 console, click **Static website hosting** and then click the
 **Endpoint** that is displayed.
 
-Task 6: Using scripts to upload changes to Amazon S3 
+Task 6: Using scripts to upload changes to Amazon S3
 ----------------------------------------------------
 
 Now that you have created a static version of your website and have
@@ -487,7 +446,7 @@ Congratulations! You have now successfully:
 -   Exported WordPress to static files.
 -   Copied static files to an Amazon S3 static website.
 
-Some things to consider 
+Some things to consider
 -----------------------
 
 **Turning off the Amazon EC2 instance:** Once your static pages have
