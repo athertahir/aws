@@ -1,9 +1,6 @@
 Serverless Web Apps using Amazon DynamoDB - Part 3
 ==================================================
 
-Serverless Web Apps using Amazon DynamoDB - Part 3
-==================================================
-
 - Overview
 - Topics covered
 - Lab Pre-requisites

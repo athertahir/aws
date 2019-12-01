@@ -1,9 +1,6 @@
 Introduction to AWS Lambda
 ==========================
 
-Introduction to AWS Lambda
-==========================
-
 - Overview
 - Technical Concepts
 - Start Lab

@@ -1,6 +1,15 @@
 Introduction to Amazon API Gateway
 ==================================
 
+- Overview
+- Topics covered
+- Prerequisites
+- Start Lab
+- Task 1: Check CloudFormation Status
+- Task 2: Create Your Lambda Functions
+- If you have time...
+- Conclusion
+
 Overview 
 --------
 

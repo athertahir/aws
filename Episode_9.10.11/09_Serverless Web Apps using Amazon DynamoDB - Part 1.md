@@ -1,10 +1,6 @@
 Serverless Web Apps using Amazon DynamoDB - Part 1
 ==================================================
 
-
-Serverless Web Apps using Amazon DynamoDB - Part 1
-==================================================
-
 - Overview
 - Start Lab
 - Task 1: Create Your DynamoDB Table
