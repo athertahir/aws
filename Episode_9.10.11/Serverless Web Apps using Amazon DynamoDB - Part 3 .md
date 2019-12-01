@@ -141,55 +141,6 @@ For pricing details, see
 Start Lab {#step5}
 ---------
 
-Notice the lab properties below the lab title:
-
--   **setup -** The estimated time to set up the lab environment
--   **access -** The time the lab will run before automatically shutting
-    down
--   **completion -** The estimated time the lab should take to complete
-
-1.  At the top of your screen, launch your lab by clicking Start Lab
-
-If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-A status bar shows the progress of the lab environment creation process.
-The AWS Management Console is accessible during lab resource creation,
-but your AWS resources may not be fully available until the process is
-complete.
-
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/loading.png)
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-**Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
 
 Task 1: Verify Your Region {#step6}
 --------------------------
@@ -207,7 +158,7 @@ AWS Management Console, in the navigation bar. This lab is configured to
 run in US East (N. Virginia). If your region is something different,
 click the region name and select "N. Virginia".
 
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/useast1region.png)
+![](./useast1region.png)
 
 **Important** Make sure your region is set to "N. Virginia".
 
@@ -228,7 +179,7 @@ you need to complete this lab. It may take a few minutes for all the
 resources to be ready. While you wait, you can observe the creation
 process for the following resources.
 
-![region](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/region.png)
+![region](./region.png)
 
 ### Verify Your DynamoDB Table
 
@@ -249,7 +200,7 @@ you can see in the Lambda Console. You will also see two more Lambda
 functions, **getheroeslist** and **getmissiondetails**, which you will
 recognize from taking the Part 2 lab.
 
-![functions](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/functions.png)
+![functions](./functions.png)
 
 ### Verify Your IAM Policies and Roles
 
@@ -295,7 +246,7 @@ This example API is prepopulated for you by AWS. It is a good reference
 if you are new to working with Amazon API Gateway, but you will not use
 this example for your lab.
 
-15. Click the ** **New API** radio button, then configure:
+15. Click the **New API** radio button, then configure:
 
 -   **API name:**
 -   **Description:**
@@ -336,13 +287,13 @@ ways.
 21. On the Actions menu, click **Create Method**, then configure:
 
 -   Click the drop-down ** arrow and select **POST**
--   Click the **check mark** ** next to **POST**
+-   Click the **check mark** next to **POST**
 
 Next you will set up your method.
 
 In the **Post - Setup** window, configure:
 
--   **Integration type:** ** **Lambda Function**
+-   **Integration type:** **Lambda Function**
 -   **Lambda Region:** *us-east-1*
 -   **Lambda Function:**
 -   Click Save
@@ -359,11 +310,11 @@ service permission to invoke your Lambda function.
 24. On the Actions menu, click **Create Method**, then configure:
 
 -   Click the drop-down ** arrow and select **POST**.
--   Click the **check mark** ** next to **POST**.
+-   Click the **check mark** next to **POST**.
 
 In the **Post - Setup** window, configure:
 
--   **Integration type:** ** **Lambda Function**
+-   **Integration type:** **Lambda Function**
 -   **Lambda Region:** *us-east-1*
 -   **Lambda Function:**
 -   Click Save
@@ -382,7 +333,7 @@ HTTP requests to servers with a different domain/origin.
 
 27. On the Actions menu, click **Enable CORS**, then configure:
 
--   Ensure ** **Post** and ** **Options**, are selected
+-   Ensure **Post** and **Options**, are selected
 -   Click Enable CORS and replace existing CORS headers
 
 28. Click Yes, replace existing values
@@ -393,7 +344,7 @@ HTTP requests to servers with a different domain/origin.
 
 30. On the Actions menu, click **Enable CORS**, then configure:
 
--   Ensure ** **Post** and ** **Options**, are selected.
+-   Ensure **Post** and **Options**, are selected.
 -   Click Enable CORS and replace existing CORS headers
 
 31. Click Yes, replace existing values
@@ -452,7 +403,7 @@ your local computer in previous steps.
 
 43. Review the output.
 
-![mission](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/mission.png)
+![mission](./mission.png)
 
 You will notice that the drop-down list uses the API Gateway resource
 **getheroeslist** to invoke the **getheroeslistFunction** Lambda
@@ -517,13 +468,13 @@ Task 5: Publish With S3 {#step10}
 
 55. Click Save
 
-![bucket-policy](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/bucket-policy.png)
+![bucket-policy](./bucket-policy.png)
 
 56. Click the **Properties** tab.
 
 57. Click **Static website hosting**, then configure:
 
--   Select ** **Use this bucket to host a website**.
+-   Select **Use this bucket to host a website**.
 -   **Index document:**
 -   Click Save
 
@@ -534,7 +485,7 @@ Task 5: Publish With S3 {#step10}
 -   Drag and then drop the entire **apiGateway-jf-sdk** folder to the
     **Overview** tab area.
 
-![dragDrop](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/dragDrop.png)
+![dragDrop](./dragDrop.png)
 
 59. Click Upload
 
@@ -548,7 +499,7 @@ This will upload the foder and its contents to your S3 bucket.
 -   Replace **BUCKET** with the name of your bucket
 -   Press **Enter**
 
-![superman](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%203%20_files/superman.png)
+![superman](./superman.png)
 
 62. You can now look up mission dossier data stored in your DynamoDB
     database.

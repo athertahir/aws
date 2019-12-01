@@ -134,56 +134,6 @@ security.
 Start Lab {#step4}
 ---------
 
-Notice the lab properties below the lab title:
-
--   **setup -** The estimated time to set up the lab environment
--   **access -** The time the lab will run before automatically shutting
-    down
--   **completion -** The estimated time the lab should take to complete
-
-1.  At the top of your screen, launch your lab by clicking Start Lab
-
-If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-A status bar shows the progress of the lab environment creation process.
-The AWS Management Console is accessible during lab resource creation,
-but your AWS resources may not be fully available until the process is
-complete.
-
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%202_files/loading.png)
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-**Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%202_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%202_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
-
 Task 1: Check CloudFormation Status {#step5}
 -----------------------------------
 
@@ -197,7 +147,7 @@ Task 1: Check CloudFormation Status {#step5}
 
 You can click the **refresh** button to refresh the screen.
 
-**Tip** ** If you do not see a stack being created, double check that
+**Tip** If you do not see a stack being created, double check that
 you are in the "N. Virginia" region.
 
 The CloudFormation template is preparing what you need to complete this
@@ -263,7 +213,7 @@ This function retrieves a list of super heroes stored in the
 
 You will see a message telling you that **Execution Result: Succeeded**.
 
-15. Expand ** **Details**.
+15. Expand **Details**.
 
 You will see a text box displaying the contents of the SuperMission
 DynamoDB table.
@@ -347,7 +297,7 @@ Near the top of the page, you will see a message telling you that
 **Execution Result: Succeeded**. Below that, there will be a text box
 displaying the mission details for “Batman”.
 
-28. Expand ** **Details**.
+28. Expand **Details**.
 
 29. Review the details.
 

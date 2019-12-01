@@ -345,7 +345,7 @@ credits you have purchased).
 
 This will automatically log you into the AWS Management Console.
 
-** **Please do not change the Region unless instructed**.
+**Please do not change the Region unless instructed**.
 
 ### Common login errors
 
@@ -380,17 +380,17 @@ Task 1: Create a Lambda Function {#step4}
 
 4.  Click Create a function
 
-** **Blueprints** are code templates for writing Lambda functions.
+**Blueprints** are code templates for writing Lambda functions.
 Blueprints are provided for standard Lambda triggers such as creating
 Alexa skills and processing Amazon Kinesis Firehose streams. This lab
 provides you with a pre-written Lambda function, so you will create your
-function by using ** **Author from scratch**.
+function by using **Author from scratch**.
 
 5.  Below **Author from scratch**, Configure:
 
 -   **Function name:**
 -   **Runtime:** *Node.js 8.10*
--   Expand ** **Choose or create an execution role**
+-   Expand **Choose or create an execution role**
 -   **Execution role:** *Use an existing role*
 -   **Existing role:** *lambda-basic-execution*
 -   Click Create function
@@ -508,7 +508,7 @@ when creating an API.
 
 -   **API:** *Create a new API*
 -   **Security:** *Open*
--   Expand ** **Additional settings**
+-   Expand **Additional settings**
 -   **API name:**
 -   **Deployment stage:**
 

@@ -1,15 +1,15 @@
 Hosting WordPress Using Amazon S3 {.headline-5}
 =================================
 
-Overview
-Start Lab
-Task 1: Configure WordPress on Amazon EC2
-Task 2: Create an Amazon S3 static website
-Task 3: Log in to your Amazon EC2 instance
-Task 4: Generate a static version of WordPress
-Task 5: Uploading static WordPress pages to Amazon S3
-Task 6: Using scripts to upload changes to Amazon S3
-Conclusion
+- Overview
+- Start Lab
+- Task 1: Configure WordPress on Amazon EC2
+- Task 2: Create an Amazon S3 static website
+- Task 3: Log in to your Amazon EC2 instance
+- Task 4: Generate a static version of WordPress
+- Task 5: Uploading static WordPress pages to Amazon S3
+- Task 6: Using scripts to upload changes to Amazon S3
+- Conclusion
 
 Overview {#step1}
 --------
@@ -52,8 +52,11 @@ This lab will cover:
 In order to successfully complete this exercise, you should be familiar
 with basic website concepts.
 
-Start Lab {#step2}
+Start Lab
 ---------
+
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
 1.  At the top of your screen, launch your lab by clicking Start Lab
 
@@ -69,7 +72,7 @@ credits you have purchased).
 
 This will automatically log you into the AWS Management Console.
 
-** **Please do not change the Region unless instructed**.
+**Please do not change the Region unless instructed**.
 
 ### Common login errors
 
@@ -219,7 +222,7 @@ It will look similar to:
 
 24. In the **Static website hosting** dialog box:
 
--   Select ** **Use this bucket to host a website**
+-   Select **Use this bucket to host a website**
 -   **Index document:**
 -   Click Save
 
@@ -269,7 +272,7 @@ here](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe).
 
 If you do not see **PublicIP**, wait a few minutes for it to appear.
 
--   In the **Connection** list, expand ** **SSH**.
+-   In the **Connection** list, expand **SSH**.
 -   Click **Auth** (don't expand it).
 -   Click **Browse**.
 -   Browse to and select the PPK file that you downloaded.
@@ -289,7 +292,7 @@ This will connect to your EC2 instance.
 
 These instructions are for Mac/Linux users only.
 
-33. To the left of these instructions, click ** **Download PEM**.
+33. To the left of these instructions, click **Download PEM**.
 
 34. Save the file to the directory of your choice.
 
@@ -449,7 +452,7 @@ confirm that the content is being copied to Amazon S3.
     cannot find the tab, simply copy the **WordPressURL** shown to the
     left of these instructions and paste it into a new browser tab.
 
-51. Click the ** **New** link at the top of the page to create a new
+51. Click the **New** link at the top of the page to create a new
     blog post.
 
 52. Enter a title and some text, click **Publish...**, and then click

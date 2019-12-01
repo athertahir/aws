@@ -77,11 +77,11 @@ The **Network** indicates which Virtual Private Cloud (VPC) you wish to launch t
 
 The Lab VPC was created using a CloudFormation template during the setup process of your lab. This VPC includes two public subnets in two different Availability Zones.
 
-1.  For **Enable termination protection**, select ** **Protect against accidental termination**.
+1.  For **Enable termination protection**, select **Protect against accidental termination**.
 
 ** When an Amazon EC2 instance is no longer required, it can be *terminated*, which means that the instance is stopped and its resources are released. A terminated instance cannot be started again. If you want to prevent the instance from being accidentally terminated, you can enable *termination protection* for the instance, which prevents it from being terminated.
 
-1.  Scroll down, then expand ** **Advanced Details**.
+1.  Scroll down, then expand **Advanced Details**.
 
 A field for **User data** will appear.
 
@@ -158,9 +158,9 @@ In this lab you will not log into your instance, so you do not require a key pai
 
 YOU MUST select **Proceed without a key pair** below. If you do not select this, your instance will fail to launch.
 
-1.  Click the **Choose an existing key pair** ** drop-down and select **Proceed without a key pair**
+1.  Click the **Choose an existing key pair** drop-down and select **Proceed without a key pair**
 
-2.  Select ** **I acknowledge that ...**.
+2.  Select **I acknowledge that ...**.
 
 3.  Click Launch Instances
 
@@ -172,7 +172,7 @@ The instance will appear in a *pending* state, which means it is being launched.
 
 The instance receives a *public DNS name* that you can use to contact the instance from the Internet.
 
-Your ** **Web Server** should be selected. The **Description** tab displays detailed information about your instance.
+Your **Web Server** should be selected. The **Description** tab displays detailed information about your instance.
 
 ** To view more information in the Description tab, drag the window divider upwards.
 
@@ -180,10 +180,10 @@ Review the information displayed in the **Description** tab. It includes informa
 
 1.  Wait for your instance to display the following:
 
--   **Instance State:** ** running
--   **Status Checks:** ** 2/2 checks passed
+-   **Instance State:** running
+-   **Status Checks:** 2/2 checks passed
 
-** **Congratulations!** You have successfully launched your first Amazon EC2 instance.
+**Congratulations!** You have successfully launched your first Amazon EC2 instance.
 
 Task 2: Monitor Your Instance
 -----------------------------
@@ -224,7 +224,7 @@ This shows you what your Amazon EC2 instance console would look like if a screen
 
 1.  Click Close
 
-** **Congratulations!** You have explored several ways to monitor your instance.
+**Congratulations!** You have explored several ways to monitor your instance.
 
 Task 3: Update Your Security Group and Access the Web Server
 ------------------------------------------------------------
@@ -247,7 +247,7 @@ To correct this, you will now update the security group to permit web traffic on
 
 2.  In the left navigation pane, click **Security Groups**.
 
-3.  Select ** **Web Server security group**.
+3.  Select **Web Server security group**.
 
 4.  Click the **Inbound** tab.
 
@@ -267,7 +267,7 @@ The new Inbound HTTP rule will create an entry for both IPV4 IP address (0.0.0.0
 
 You should see the message *Hello From Your Web Server!*
 
-** **Congratulations!** You have successfully modified your security group to permit HTTP traffic into your Amazon EC2 Instance.
+**Congratulations!** You have successfully modified your security group to permit HTTP traffic into your Amazon EC2 Instance.
 
 Task 4: Resize Your Instance: Instance Type and EBS Volume
 ----------------------------------------------------------
@@ -282,7 +282,7 @@ Before you can resize an instance, you must *stop* it.
 
 1.  On the **EC2 Management Console**, in the left navigation pane, click **Instances**.
 
-** **Web Server** should already be selected.
+**Web Server** should already be selected.
 
 1.  In the Actions ** menu, select **Instance State ** > **Stop**.
 
@@ -329,7 +329,7 @@ You will now start the instance again, which will now have more memory and more 
 
 **Note:** An EBS volume being modified goes through a sequence of states: Modifying, Optimizing, and finally Complete.
 
-** **Congratulations!** You have successfully resized your Amazon EC2 Instance. In this task you changed your instance type from *t2.micro* to *t2.small*. You also modified your root disk volume from 8 GiB to 10 GiB.
+**Congratulations!** You have successfully resized your Amazon EC2 Instance. In this task you changed your instance type from *t2.micro* to *t2.small*. You also modified your root disk volume from 8 GiB to 10 GiB.
 
 Task 5: Explore EC2 Limits
 --------------------------

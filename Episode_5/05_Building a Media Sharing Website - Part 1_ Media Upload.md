@@ -119,8 +119,11 @@ it.
 For more information on Amazon S3, refer to:
 [*http://aws.amazon.com/s3/*](http://aws.amazon.com/s3/)
 
-Start Lab {#step3}
+Start Lab
 ---------
+
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
 Notice the lab properties below the lab title:
 
@@ -313,7 +316,7 @@ instance should be selected.
 20. On **Step 3**, configure:
 
 -   **IAM role:** *EC2Profile*
--   Scroll to the bottom of the screen, then expand ** **Advanced
+-   Scroll to the bottom of the screen, then expand **Advanced
     Details**
 
 You need to specify which DynamoDB table and which Amazon S3 bucket to
@@ -417,7 +420,7 @@ ignore this warning.
 You will receive a popup window to select a key pair or create a new
 one.
 
-31. Select ** **I acknowledge that...**.
+31. Select **I acknowledge that...**.
 
 32. Click Launch Instances
 
@@ -430,7 +433,7 @@ You will now be taken to the Instances tab of the Amazon EC2 Dashboard,
 which displays the list of all running Amazon EC2 instances in the
 currently selected region. You can see the status of your instance here.
 
-34. Your ** **WebServer** should be selected.
+34. Your **WebServer** should be selected.
 
 You should see a list of details and status update for your instance in
 the bottom pane of the console. Scroll through the various details about
@@ -438,11 +441,11 @@ your running instance.
 
 35. Wait till the instance displays:
 
--   ** **running**
--   ** **2/2 checks passed**
+-   **running**
+-   **2/2 checks passed**
 
 The app takes an additional 3-4 minutes to initialize itself once the
-status check is green. You can click the **refresh** ** button to
+status check is green. You can click the **refresh** button to
 refresh the status.
 
 When it is running and has passed status checks, continue on to the next

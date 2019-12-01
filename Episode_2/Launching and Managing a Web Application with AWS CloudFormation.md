@@ -208,7 +208,7 @@ You will now delete the stack you created and see how all resources created by t
 
 1.  On the Services menu, click **CloudFormation**.
 
-2.  Select ** **Lab-1**.
+2.  Select **Lab-1**.
 
 3.  Click Delete.
 
@@ -301,7 +301,7 @@ The bucket value will start with *lab-2*.
 
 1.  On the Services menu, click **CloudFormation**.
 
-2.  Select ** **Lab-2**.
+2.  Select **Lab-2**.
 
 3.  Click Delete
 
@@ -428,7 +428,7 @@ This example uses a single Amazon EC2 instance and Elastic IP address, but you c
 2.  On the **Review** page:
 
 -   Review the configuration
--   Select the ** **I acknowledge that ...**
+-   Select the **I acknowledge that ...**
 -   Click Create stack
 
 1.  Click the **refresh** button every 30 seconds to see the updated events till the status of your stack displays *CREATE\_COMPLETE*.
@@ -476,11 +476,11 @@ It will be easy to change your instance type because *ENV* was an input paramete
       - prod
 ```
 
-1.  In the **CloudFormation Management Console**, select ** **Lab-3**.
+1.  In the **CloudFormation Management Console**, select **Lab-3**.
 
 2.  Click Update, then configure:
 
--   Select ** **Use current template**
+-   Select **Use current template**
 -   Click Next
 
 1.  On the **Specify stack details** page, configure:
@@ -494,7 +494,7 @@ It will be easy to change your instance type because *ENV* was an input paramete
 
 -   Review the configuration
 -   View the list of the changes that will be deployed
--   Select the ** **I acknowledge that...**.
+-   Select the **I acknowledge that...**.
 -   Click Update stack
 
 The instance type of an Amazon EC2 instance can be changed by starting and stopping the instance. AWS CloudFormation tries to optimize the change by updating the instance type and restarting the instance, so the Instance ID does not change. When the instance is restarted, however, the public IP address of the instance does change. To ensure that the Elastic IP address is bound correctly after the change, AWS CloudFormation will also update the Elastic IP address. You can see the changes in the AWS CloudFormation console on the Events tab. Here you have changed more than just the Instance Type, hence the first instance is terminated and a new one is launched.
@@ -544,7 +544,7 @@ This code adds port **22** to the ingress rules for the Amazon EC2 security grou
 
 1.  On the Services menu, click **CloudFormation**.
 
-2.  Select ** **Lab-3**.
+2.  Select **Lab-3**.
 
 3.  Click Update, then configure:
 
@@ -562,7 +562,7 @@ This code adds port **22** to the ingress rules for the Amazon EC2 security grou
 
 The **Preview your changes** section will show how resources will be updated.
 
-1.  Select ** **I acknowledge that...**.
+1.  Select **I acknowledge that...**.
 
 2.  Click Update stack
 
@@ -692,7 +692,7 @@ Outputs:
 
 If you use this template to update the stack, you will convert your simple, single-instance application into a highly available, multi-AZ, auto-scaled and load balanced application. Only the resources that need to be updated will be altered, so if there were any data stores for this application, the data would have remained intact. Now, you can use AWS CloudFormation to grow or enhance your stacks as your requirements change.
 
-1.  Select ** **Lab-3**.
+1.  Select **Lab-3**.
 
 2.  Click Update, then configure:
 
@@ -711,7 +711,7 @@ If you use this template to update the stack, you will convert your simple, sing
 
 2.  On the **Review** page, review the parameters.
 
-3.  Select ** **I acknowledge that...**
+3.  Select **I acknowledge that...**
 
 4.  Scroll to the bottom of the screen, then click Update stack
 

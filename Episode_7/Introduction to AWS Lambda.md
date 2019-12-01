@@ -4,14 +4,13 @@ Introduction to AWS Lambda {.headline-5}
 Introduction to AWS Lambda {.lab-preamble__title}
 ==========================
 
-Overview
-Technical Concepts
-Start Lab
-Task 1: Create a Lambda Function
-Task 2: Test the Lambda function
-Conclusion
-End Lab
-Next Steps
+- Overview
+- Technical Concepts
+- Start Lab
+- Task 1: Create a Lambda Function
+- Task 2: Test the Lambda function
+- Conclusion
+- End Lab
 
 Overview {#step1}
 --------
@@ -42,49 +41,11 @@ By the end of this lab you will be able to:
 
 Familiarity with Amazon S3 would be beneficial.
 
-Start Lab {#step2}
+Start Lab
 ---------
 
-1.  At the top of your screen, launch your lab by clicking Start Lab
-
-This will start the process of provisioning your lab resources. An
-estimated amount of time to provision your lab resources will be
-displayed. You must wait for your resources to be provisioned before
-continuing.
-
-** If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-** **Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./Introduction%20to%20AWS%20Lambda_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./Introduction%20to%20AWS%20Lambda_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
 Scenario {#step3}
 --------
@@ -204,7 +165,7 @@ lab.
 
 15. Click Create a function
 
-** **Blueprints** are code templates for writing Lambda functions.
+**Blueprints** are code templates for writing Lambda functions.
 Blueprints are provided for standard Lambda triggers such as creating
 Alexa skills and processing Amazon Kinesis Firehose streams. This lab
 provides you with a pre-written Lambda function, so you will **Author
@@ -214,7 +175,7 @@ from scratch**.
 
 -   **Function name:**
 -   **Runtime:** *Python 3.7*
--   Expand ** **Choose or create an execution role**
+-   Expand **Choose or create an execution role**
 -   **Execution role:** *Use an existing role*
 -   **Existing role:** *lambda-execution-role*
 
@@ -366,7 +327,7 @@ image was not found possibly due to an incorrect bucket name. Review the
 previous steps to confirm that you have configured the function
 correctly.
 
-30. Click ** **Details** to expand it (towards the top of the screen).
+30. Click **Details** to expand it (towards the top of the screen).
 
 You will be shown information including:
 

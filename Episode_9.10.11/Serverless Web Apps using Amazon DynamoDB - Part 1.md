@@ -212,7 +212,7 @@ The first item **Field** is already populated for you with *SuperHero*.
 
 9.  Add the next attribute by clicking the ** symbol, then:
 
--   Clicking ** **Append**
+-   Clicking **Append**
 -   Selecting **String**
 
 10. Using the table below, enter each item as **Field** and **Value**,
@@ -260,7 +260,7 @@ In this task, you will add an item as JSON.
 
 12. Click Create Item then configure:
 
--   Click **Tree** **
+-   Click **Tree**
 -   Select **Text**
 
 13. Delete all text in the editor.
@@ -324,7 +324,7 @@ pre-created for you as part of the lab environment.
 
 19. Click the role named **SuperDynamoDBScanRole**.
 
-20. Expand ** **SuperDynamoDBScanPolicy**.
+20. Expand **SuperDynamoDBScanPolicy**.
 
 Details of the policy will appear.
 
@@ -360,7 +360,7 @@ account.
 
 23. Click the role named **SuperDynamoDBQueryRole**.
 
-24. Expand ** **SuperDynamoDBQueryPolicy**.
+24. Expand **SuperDynamoDBQueryPolicy**.
 
 Details of the policy will appear.
 

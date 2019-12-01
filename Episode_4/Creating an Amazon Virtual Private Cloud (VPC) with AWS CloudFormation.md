@@ -134,7 +134,7 @@ This configures the VPC console to only display resources that belong to the VPC
 
 15. In the left navigation pane, click **Your VPCs**.
 
-16. Select ** **Lab VPC**.
+16. Select **Lab VPC**.
 
 A VPC is an isolated section of the AWS Cloud that allows resources to communicate with each other and, selectively, with the Internet. When deploying resources such as Amazon EC2 instances, you must select the VPC in which the instance will be launched.
 
@@ -398,7 +398,7 @@ In this task, you will view the template using the AWS CloudFormation Designer.
 
 37. On the Services menu, click **CloudFormation**.
 
-38. Select the ** **Lab** stack.
+38. Select the **Lab** stack.
 
 39. Click the **Template** tab.
 
@@ -429,7 +429,7 @@ In this task, you will delete the stack, which will automatically delete the VPC
 
 This will exit the Designer. If prompted, click **Leave** to exit.
 
-46. Select the ** **Lab** stack.
+46. Select the **Lab** stack.
 
 47. Click Delete, then click Delete stack
 

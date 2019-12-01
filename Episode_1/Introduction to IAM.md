@@ -290,7 +290,7 @@ Next, check if user-2 can access Amazon S3.
 
 1.  In the **Services**, click **S3**.
 
-You will receive an ** **Error Access Denied** because user-2 does not permission to use Amazon S3.
+You will receive an **Error Access Denied** because user-2 does not permission to use Amazon S3.
 
 You will now sign-in as **user-3**, who has been hired as your Amazon EC2 administrator.
 
