@@ -121,13 +121,11 @@ This policy has permissions to Get and List resources in Amazon S3.
 
 3.  Click the **EC2-Admin** group.
 
-This Group is slightly different from the other two. Instead of a *Managed Policy*, it has an **Inline Policy**, which is a policy assigned to just one User or Group. Inline Policies are typically used to apply permissions for one-off situations.
+4.  Under **Actions**, click **Edit Policy** to view the policy.
 
-1.  Under **Actions**, click **Edit Policy** to view the policy.
+    This policy grants permission to view (Describe) information about Amazon EC2 and also the ability to Start and Stop instances.
 
-This policy grants permission to view (Describe) information about Amazon EC2 and also the ability to Start and Stop instances.
-
-2.  At the bottom of the screen, click **Cancel** to close the policy.
+5.  At the bottom of the screen, click **Cancel** to close the policy.
 
 Business Scenario
 -----------------
@@ -146,8 +144,6 @@ Task 2: Add Users to Groups
 ---------------------------
 
 You have recently hired **user-1** into a role where they will provide support for Amazon S3. You will add them to the **S3-Support** group so that they inherit the necessary permissions via the attached *AmazonS3ReadOnlyAccess* policy.
-
-** You can ignore any "not authorized" errors that appear during this task. They are caused by your lab account having limited permissions and will not impact your ability to complete the lab.
 
 **Add user-1 to the S3-Support Group**
 
@@ -195,7 +191,7 @@ In this task, you will test the permissions of each IAM User.
 
 1.  In the navigation pane on the left, click **Dashboard**.
 
-An **IAM users sign-in link** is displayed It will look similar to: *https://123456789012.signin.aws.amazon.com/console*
+An **IAM users sign-in link** is displayed It will look similar to: *https://808477742599.signin.aws.amazon.com/console*
 
 This link can be used to sign-in to the AWS Account you are currently using.
 
@@ -270,7 +266,7 @@ This links should be in your text editor.
 
 You are now able to see an Amazon EC2 instance because you have Read Only permissions. However, you will not be able to make any changes to Amazon EC2 resources.
 
-** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
+If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
 
 ![](./region-user-2.png)
 
@@ -316,9 +312,9 @@ You will now sign-in as **user-3**, who has been hired as your Amazon EC2 admini
 
 As an EC2 Administrator, you should now have permissions to Stop the Amazon EC2 instance.
 
-Your EC2 instance should be selected **. If it is not, please select it.
+Your EC2 instance should be selected. If it is not, please select it.
 
-** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
+If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
 
 1.  In the **Actions** menu, click **Instance State** \> **Stop**.
 
