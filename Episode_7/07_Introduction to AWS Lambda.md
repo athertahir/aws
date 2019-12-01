@@ -90,7 +90,7 @@ to the bucket name.
 3.  In the **AWS Management Console**, on the Services menu, click
     **S3**.
 
-4.  Click ** Create bucket then configure:
+4.  Click Create bucket then configure:
 
 -   **Bucket name:** `images-NUMBER`
 -   Replace **NUMBER** with a random number
@@ -136,7 +136,7 @@ It is a large picture, with dimensions of 1280 x 853.
 9.  In the **S3 Management Console**, click the **images-** bucket. (Not
     the *-resized* bucket)
 
-10. Click ** Upload
+10. Click Upload
 
 11. In the **Upload** window, click Add files
 
@@ -188,7 +188,7 @@ such as data being received by Amazon Kinesis or data being updated in
 an Amazon DynamoDB database. For this lab, you will trigger the Lambda
 function whenever a new object is created in your Amazon S3 bucket.
 
-18. Click ** Add trigger then configure:
+18. Click Add trigger then configure:
 
 -   **Select a trigger:** *S3*
 -   **Bucket:** Select your **images-** bucket (e.g. *images-123*)

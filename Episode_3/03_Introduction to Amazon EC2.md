@@ -63,7 +63,7 @@ The **Quick Start** list contains the most commonly-used AMIs. You can also crea
 
 ** Amazon EC2 provides a wide selection of *instance types* optimized to fit different use cases. Instance types comprise varying combinations of CPU, memory, storage, and networking capacity and give you the flexibility to choose the appropriate mix of resources for your applications. Each instance type includes one or more *instance sizes*, allowing you to scale your resources to the requirements of your target workload.
 
-You will use a **t2.micro** instance which should be selected ** by default. This instance type has 1 virtual CPU and 1 GiB of memory.
+You will use a **t2.micro** instance which should be selected by default. This instance type has 1 virtual CPU and 1 GiB of memory.
 
 1.  Click Next: Configure Instance Details
 
@@ -140,7 +140,7 @@ Keep the default selection, Create a **new** security group.
 
 In this lab, you will not log into your instance using SSH. Removing SSH access will improve the security of the instance.
 
-1.  Delete ** the existing SSH rule.
+1.  Delete the existing SSH rule.
 
 2.  Click Review and Launch
 
@@ -204,7 +204,7 @@ You can click on a graph to see an expanded view.
 
 Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances. Basic (five-minute) monitoring is enabled by default. You can enable detailed (one-minute) monitoring.
 
-1.  In the Actions ** menu, select **Instance Settings ** > **Get System Log**.
+1.  In the Actions menu, select **Instance Settings > **Get System Log**.
 
 The System Log displays the console output of the instance, which is a valuable tool for problem diagnosis. It is especially useful for troubleshooting kernel problems and service configuration issues that could cause an instance to terminate or become unreachable before its SSH daemon can be started. If you do not see a system log, wait a few minutes and then try again.
 
@@ -214,7 +214,7 @@ The System Log displays the console output of the instance, which is a valuable 
 
 1.  Click Close
 
-2.  In the Actions menu, select **Instance Settings ** > **Get Instance Screenshot**.
+2.  In the Actions menu, select **Instance Settings > **Get Instance Screenshot**.
 
 This shows you what your Amazon EC2 instance console would look like if a screen were attached to it.
 
@@ -263,7 +263,7 @@ The new Inbound HTTP rule will create an entry for both IPV4 IP address (0.0.0.0
 
 **Note:** using "Anywhere", or more specifically, using 0.0.0.0/0 or ::/0 is not a recommended best practice for production workloads.
 
-1.  Return to the web server tab that you previously opened and refresh ** the page.
+1.  Return to the web server tab that you previously opened and refresh the page.
 
 You should see the message *Hello From Your Web Server!*
 
@@ -284,17 +284,17 @@ When you stop an instance, it is shut down. There is no charge for a stopped EC2
 
 **Web Server** should already be selected.
 
-1.  In the Actions ** menu, select **Instance State ** > **Stop**.
+1.  In the Actions menu, select **Instance State > **Stop**.
 
 2.  Click Yes, Stop
 
 Your instance will perform a normal shutdown and then will stop running.
 
-1.  Wait for the **Instance State** to display: ** stopped
+1.  Wait for the **Instance State** to display: stopped
 
 ### Change The Instance Type
 
-1.  In the Actions ** menu, select **Instance Settings ** > **Change Instance Type**, then configure:
+1.  In the Actions menu, select **Instance Settings > **Change Instance Type**, then configure:
 
 -   **Instance Type:** *t2.small*
 -   Click Apply
@@ -305,7 +305,7 @@ When the instance is started again it will be a *t2.small*, which has twice as m
 
 1.  In the left navigation menu, click **Volumes**.
 
-2.  In the Actions ** menu, select **Modify Volume**.
+2.  In the Actions menu, select **Modify Volume**.
 
 The disk volume currently has a size of 8 GiB. You will now increase the size of this disk.
 
@@ -323,7 +323,7 @@ You will now start the instance again, which will now have more memory and more 
 
 1.  In left navigation pane, click **Instances**.
 
-2.  In the Actions ** menu, select **Instance State ** > **Start**.
+2.  In the Actions menu, select **Instance State > **Start**.
 
 3.  Click Yes, Start
 
@@ -353,7 +353,7 @@ In this task, you will learn how to use *termination protection*.
 
 1.  In left navigation pane, click **Instances**.
 
-2.  In the Actions ** menu, select **Instance State ** > **Terminate**.
+2.  In the Actions menu, select **Instance State > **Terminate**.
 
 Note that there is a message that says: *These instances have Termination Protection and will not be terminated. Use the Change Termination Protection option from the Instances screen Actions menu to allow termination of these instances.*
 
@@ -363,13 +363,13 @@ This is a safeguard to prevent the accidental termination of an instance. If you
 
 1.  Click Cancel.
 
-2.  In the Actions ** menu, select **Instance Settings ** > **Change Termination Protection**.
+2.  In the Actions menu, select **Instance Settings > **Change Termination Protection**.
 
 3.  Click Yes, Disable
 
 You can now terminate the instance.
 
-1.  In the Actions ** menu, select **Instance State ** > **Terminate**.
+1.  In the Actions menu, select **Instance State > **Terminate**.
 
 2.  Click Yes, Terminate
 

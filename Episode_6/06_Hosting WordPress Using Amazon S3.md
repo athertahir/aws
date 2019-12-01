@@ -85,7 +85,7 @@ The WordPress configuration page displays.
 -   **Site Title:** Enter any title you wish
 -   **Username:** `student`
 -   **Password:** `student123`
--   **Confirm Password:** Select ** Confirm use of weak password
+-   **Confirm Password:** Select Confirm use of weak password
 -   **Your Email:** `student@example.com`
 -   **Search Engine Visibility:** Do not change
 
@@ -136,7 +136,7 @@ Management Console.
 
 13. In the AWS Management Console, click Services and then click **S3**.
 
-14. Click ** Create bucket then configure:
+14. Click Create bucket then configure:
 
 -   **Bucket name:** `wordpress-NUMBER`
 -   Replace **NUMBER** with a random number
@@ -198,7 +198,7 @@ as *PublicIP*.
 [Mac/Linux users - click here for Login
 instructions](https://run.qwiklabs.com/focuses/347?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3928994#ssh-mac)
 
-### ** Windows users: Using SSH to connect
+### Windows users: Using SSH to connect
 
 ** These instructions are for Windows users only.
 
@@ -247,7 +247,7 @@ This will connect to your EC2 instance.
 32. [Windows Users: Click here to skip ahead to the next
     step.](https://run.qwiklabs.com/focuses/347?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3928994#ssh-after)
 
-### Mac ** and Linux ** users
+### Mac and Linux users
 
 These instructions are for Mac/Linux users only.
 

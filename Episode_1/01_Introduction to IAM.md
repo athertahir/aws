@@ -103,7 +103,7 @@ The basic structure of the statements in an IAM Policy is:
 -   **Action** specifies the API calls that can be made against an AWS Service (eg *cloudwatch:ListMetrics*).
 -   **Resource** defines the scope of entities covered by the policy rule (eg a specific Amazon S3 bucket or Amazon EC2 instance, or \* which means *any resource*).
 
-1.  Close ** the **Show Policy** window.
+1.  Close the **Show Policy** window.
 
 2.  In the navigation pane on the left, click **Groups**.
 
@@ -115,7 +115,7 @@ The S3-Support group has the **AmazonS3ReadOnlyAccess** policy attached.
 
 This policy has permissions to Get and List resources in Amazon S3.
 
-1.  Close ** the **Show Policy** window.
+1.  Close the **Show Policy** window.
 
 2.  In the navigation pane on the left, click **Groups**.
 
@@ -205,17 +205,17 @@ This link can be used to sign-in to the AWS Account you are currently using.
 
 **Mozilla Firefox**
 
--   Click the menu bars ** at the top-right of the screen
+-   Click the menu bars at the top-right of the screen
 -   Select **New Private Window**
 
 **Google Chrome**
 
--   Click the ellipsis ** at the top-right of the screen
+-   Click the ellipsis at the top-right of the screen
 -   Click **New incognito window**
 
 **Microsoft Edge**
 
--   Click the ellipsis ** at the top-right of the screen
+-   Click the ellipsis at the top-right of the screen
 -   Click **New InPrivate window**
 
 **Microsoft Internet Explorer**
@@ -274,7 +274,7 @@ You are now able to see an Amazon EC2 instance because you have Read Only permis
 
 ![](./region-user-2.png)
 
-Your EC2 instance should be selected **. If it is not selected, select ** it.
+Your EC2 instance should be selected **. If it is not selected, select it.
 
 1.  In the **Actions** menu, click **Instance State** \> **Stop**.
 
@@ -316,7 +316,7 @@ You will now sign-in as **user-3**, who has been hired as your Amazon EC2 admini
 
 As an EC2 Administrator, you should now have permissions to Stop the Amazon EC2 instance.
 
-Your EC2 instance should be selected **. If it is not, please select ** it.
+Your EC2 instance should be selected **. If it is not, please select it.
 
 ** If you cannot see an Amazon EC2 instance, then your Region may be incorrect. In the top-right of the screen, pull-down the Region menu and select the region that you noted at the start of the lab (eg **Ohio**).
 

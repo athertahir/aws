@@ -164,7 +164,7 @@ A stack already appears in the list. This was created for you when the lab was s
 
 1.  Click Create stack then configure:
 
--   Click ** Upload a template file
+-   Click Upload a template file
 -   Click Choose file
 -   Browse to and select the *lab1.yaml* template you downloaded.
 -   Click Next
@@ -216,7 +216,7 @@ You will now delete the stack you created and see how all resources created by t
 
 The stack status should now be *DELETE\_IN\_PROGRESS* for a few minutes. The list will be updated, and you will see that the stack is gone.
 
-1.  Wait for the status the stack to disappear from the list (refresh ** as necessary).
+1.  Wait for the status the stack to disappear from the list (refresh as necessary).
 
 ### Verify That The S3 Bucket Has Been Deleted
 
@@ -264,7 +264,7 @@ You will now create a new stack from the modified template, then delete it and v
 
 2.  Click Create stack then configure:
 
--   Click ** Upload a template file
+-   Click Upload a template file
 -   Click Choose file
 -   Browse to and select the *lab2.yaml* template you downloaded.
 -   Click Next
@@ -410,7 +410,7 @@ This example uses a single Amazon EC2 instance and Elastic IP address, but you c
 
 2.  Click Create stack then configure:
 
--   Click ** Upload a template file
+-   Click Upload a template file
 -   Click Choose file
 -   Browse to and select the *lab3.yaml* template you downloaded.
 -   Click Next
@@ -548,8 +548,8 @@ This code adds port **22** to the ingress rules for the Amazon EC2 security grou
 
 3.  Click Update, then configure:
 
--   Click ** Replace current template
--   Click ** Upload a template file
+-   Click Replace current template
+-   Click Upload a template file
 -   Click Choose file
 -   Browse to and select the *lab4.yaml* template you downloaded
 -   Click Next
@@ -696,8 +696,8 @@ If you use this template to update the stack, you will convert your simple, sing
 
 2.  Click Update, then configure:
 
--   Click ** Replace current template
--   Click ** Upload a template
+-   Click Replace current template
+-   Click Upload a template
 -   Click Choose file
 -   Browse to and select the *lab5.yaml* template you downloaded
 -   Click Next

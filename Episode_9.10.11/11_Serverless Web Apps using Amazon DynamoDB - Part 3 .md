@@ -424,9 +424,9 @@ Task 5: Publish With S3
 
 45. On the Services menu, click **S3**.
 
-46. Click ** Create bucket then configure:
+46. Click Create bucket then configure:
 
--   **Bucket name:**
+-   **Bucket name:** `mybucketNUMBER`
 -   Replace **NUMBER** with a random number - bucket names must be
     unique
 -   Copy the name of the bucket to your editor
@@ -538,5 +538,4 @@ experience.
 
 63. Return to the AWS Management Console.
 
-64. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**,
-    and then click **Sign Out**.
+64. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**, and then click **Sign Out**.

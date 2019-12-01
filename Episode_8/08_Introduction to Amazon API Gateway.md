@@ -375,7 +375,7 @@ Task 2: Test the Lambda function
 
 You will be presented with the FAQ Lambda function page.
 
-15. Under **API Gateway**, click the right arrow ** to view the details
+15. Under **API Gateway**, click the right arrow to view the details
     of your API.
 
 16. Copy the **API endpoint** to your clipboard, then:

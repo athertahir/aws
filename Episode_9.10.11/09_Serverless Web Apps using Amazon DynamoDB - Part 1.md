@@ -210,7 +210,7 @@ The first item **Field** is already populated for you with *SuperHero*.
 
 8.  For **Value**, enter: `Batman`
 
-9.  Add the next attribute by clicking the ** symbol, then:
+9.  Add the next attribute by clicking the symbol, then:
 
 -   Clicking **Append**
 -   Selecting **String**
