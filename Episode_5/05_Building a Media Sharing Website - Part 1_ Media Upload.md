@@ -487,7 +487,7 @@ Congratulations! You now have successfully:
 -   Launched a new Amazon EC2 instance to run your web server
 -   Created an Amazon DynamoDB database to hold your data
 
-Additional Resources {#step11}
+Additional Resources
 --------------------
 
 -   [AWS Training and Certification](http://aws.amazon.com/training)

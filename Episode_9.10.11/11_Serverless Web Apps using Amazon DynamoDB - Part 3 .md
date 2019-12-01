@@ -424,7 +424,7 @@ Task 5: Publish With S3
 
 45. On the Services menu, click **S3**.
 
-46. Click Create bucket then configure:
+46. Click `Create bucket` then configure:
 
 -   **Bucket name:** `mybucketNUMBER`
 -   Replace **NUMBER** with a random number - bucket names must be
@@ -503,14 +503,14 @@ This will upload the foder and its contents to your S3 bucket.
 62. You can now look up mission dossier data stored in your DynamoDB
     database.
 
-If you have time... {#step11}
+If you have time...
 -------------------
 
 -   Add your own mission dossiers to the SuperMission DyanamoDB table.
     How many super hero plot lines can you remember?
 -   Then, refresh your web app and see your new missions
 
-Conclusion {#step12}
+Conclusion
 ----------
 
 Congratulations! You have completed this three lab series. You

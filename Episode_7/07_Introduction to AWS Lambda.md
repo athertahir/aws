@@ -90,7 +90,7 @@ to the bucket name.
 3.  In the **AWS Management Console**, on the Services menu, click
     **S3**.
 
-4.  Click Create bucket then configure:
+4.  Click  `Create bucket` then configure:
 
 -   **Bucket name:** `images-NUMBER`
 -   Replace **NUMBER** with a random number
@@ -136,7 +136,7 @@ It is a large picture, with dimensions of 1280 x 853.
 9.  In the **S3 Management Console**, click the **images-** bucket. (Not
     the *-resized* bucket)
 
-10. Click Upload
+10. Click `Upload`
 
 11. In the **Upload** window, click Add files
 

@@ -18,8 +18,7 @@ provision and update a web application with a number of supporting AWS
 products and services, including Auto Scaling groups, Amazon Elastic
 Cloud Compute (EC2) instances, and Elastic Load Balancing.
 
-In the first part you will create a simple resource, an **Amazon S3
-bucket**, with AWS CloudFormation and you will look at different
+In the first part you will create a simple resource, an **Amazon S3 bucket**, with AWS CloudFormation and you will look at different
 retention policies applied when you delete an AWS CloudFormation stack
 or during a rollback.
 
@@ -103,51 +102,14 @@ Definitions of each of these objects can be found in the online
 Anatomy](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/concept-template.html#concept-template-description)
 documentation.
 
-Start Lab {#step2}
+Start Lab
 ---------
 
-1.  At the top of your screen, launch your lab by clicking Start Lab
+-   Open https://808477742599.signin.aws.amazon.com/console
+-   Enter login credentials
 
-This will start the process of provisioning your lab resources. An
-estimated amount of time to provision your lab resources will be
-displayed. You must wait for your resources to be provisioned before
-continuing.
 
-** If you are prompted for a token, use the one distributed to you (or
-credits you have purchased).
-
-2.  Open your lab by clicking Open Console
-
-This will automatically log you into the AWS Management Console.
-
-**Please do not change the Region unless instructed**.
-
-### Common login errors
-
-**Error : Federated login credentials**
-
-![](./Launching%20and%20Managing%20a%20Web%20Application%20with%20AWS%20CloudFormation%20_%20Qwiklabs_files/federatedloginerror.png)
-
-If you see this message:
-
--   Close the browser tab to return to your initial lab window
--   Wait a few seconds
--   Click Open Console again
-
-You should now be able to access the AWS Management Console.
-
-**Error: You must first log out**
-
-![](./Launching%20and%20Managing%20a%20Web%20Application%20with%20AWS%20CloudFormation%20_%20Qwiklabs_files/logouterror.png)
-
-If you see the message, **You must first log out before logging into a
-different AWS account:**
-
--   Click **click here**
--   Close your browser tab to return to your initial Qwiklabs window
--   Click Open Console again
-
-Task 1: Create an Amazon S3 bucket using AWS CloudFormation {#step3}
+Task 1: Create an Amazon S3 bucket using AWS CloudFormation
 -----------------------------------------------------------
 
 You will start with a very simple AWS CloudFormation template to create
@@ -290,7 +252,7 @@ Outputs:
     feedback:
 
 ![New
-Console](./Launching%20and%20Managing%20a%20Web%20Application%20with%20AWS%20CloudFormation%20_%20Qwiklabs_files/new-console.png)
+Console](./new-console.png)
 
 A stack already appears in the list. This was created for you when the
 lab was started. You will be creating an additional stack.
@@ -338,7 +300,7 @@ You will now see your newly created bucket, starting with . Notice also
 that AWS CloudFormation automatically created another bucket named
 *cf-template-xxx* where it stores the templates you upload.
 
-Task 2: Delete the Stack {#step4}
+Task 2: Delete the Stack
 ------------------------
 
 You will now delete the stack you created and see how all resources
@@ -366,7 +328,7 @@ The list will be updated, and you will see that the stack is gone.
 
 The *Lab-1* bucket has been deleted.
 
-Task 3: Change The Retention Policy {#step5}
+Task 3: Change The Retention Policy
 -----------------------------------
 
 A common use-case is to store application assets in Amazon S3. They can
@@ -481,7 +443,7 @@ In the next part you will review more advanced features of AWS
 CloudFormation: using cfn-init, receiving inputs, using mappings and
 updating stacks.
 
-Task 4: Provision a Web Application {#step6}
+Task 4: Provision a Web Application
 -----------------------------------
 
 This section walks through a simple progression of updates of a running
@@ -657,9 +619,9 @@ The **Outputs** tab will display the URL of your website.
 
 You should see a simple page with the following message:
 
-![](./Launching%20and%20Managing%20a%20Web%20Application%20with%20AWS%20CloudFormation%20_%20Qwiklabs_files/task4-website.png)
+![](./task4-website.png)
 
-Task 5: Change Resources Properties {#step7}
+Task 5: Change Resources Properties
 -----------------------------------
 
 With AWS CloudFormation, you can change the properties of an existing
@@ -744,7 +706,7 @@ is terminated and a new one is launched.
     management console and viewing the Instance Type. It should be
     *t2.small*.
 
-Task 6: Add Resources Properties {#step8}
+Task 6: Add Resources Properties
 --------------------------------
 
 So far, you've looked at changing existing properties of a resource in a
@@ -825,9 +787,9 @@ The **Outputs** tab will display the URL of your website.
 You should see the following message showing that the stack has been
 successfully updated:
 
-![](./Launching%20and%20Managing%20a%20Web%20Application%20with%20AWS%20CloudFormation%20_%20Qwiklabs_files/task6-website.png)
+![](./task6-website.png)
 
-Task 7: Create an Auto-Scaled Application {#step9}
+Task 7: Create an Auto-Scaled Application
 -----------------------------------------
 
 Next, you will change the IAM role that is assigned to the Amazon EC2
@@ -1007,7 +969,7 @@ load balancer of your newly high-availability application.
 
 81. Press **Enter** to navigate to the website.
 
-![](./Launching%20and%20Managing%20a%20Web%20Application%20with%20AWS%20CloudFormation%20_%20Qwiklabs_files/task7-website.png)
+![](./task7-website.png)
 
 82. Click the **Resources** tab of the AWS CloudFormation stack.
 
@@ -1046,7 +1008,7 @@ before you make any changes, you should consider these questions:
     not be fully operational. For example, it may not be able to serve
     requests or access a database.
 
-End Lab {#step10}
+End Lab
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the

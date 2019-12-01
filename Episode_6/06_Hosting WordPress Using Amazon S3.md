@@ -136,7 +136,7 @@ Management Console.
 
 13. In the AWS Management Console, click Services and then click **S3**.
 
-14. Click Create bucket then configure:
+14. Click  `Create bucket` then configure:
 
 -   **Bucket name:** `wordpress-NUMBER`
 -   Replace **NUMBER** with a random number
@@ -464,7 +464,7 @@ user input. If you want dynamic content on pages, consider using
 Javascript to add logic within the web browser, or use plugin services
 such as Disqus to host content from a different website.
 
-End Lab {#step11}
+End Lab
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the

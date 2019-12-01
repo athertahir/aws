@@ -73,7 +73,7 @@ You will examine the contents of the template in the next task.
 
 6.  Click Create stack then configure:
 
--   Click Upload a template file
+-   Click `Upload a template file`
 -   Click Choose file
 -   Browse to and select the *vpc-1.yaml* file you downloaded.
 -   Click Next
@@ -350,9 +350,9 @@ Additional public and private subnets have been added in another Availability Zo
 
 27. Click Update, then configure:
 
--   Select Replace current template
--   Click Upload a template file
--   Click Choose file
+-   Select `Replace current template`
+-   Click `Upload a template file`
+-   Click `Choose file`
 -   Select the **vpc-2.yaml** template you just downloaded.
 
 28. Click Next
