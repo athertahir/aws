@@ -128,47 +128,14 @@ innovation** around your set of services. Therefore, it is important to
 make your API intuitive and easy-to-use. Here is a common naming and
 method scheme to follow:
 
-Operation
-
-URL
-
-Function
-
-GET
-
-/questions
-
-Returns all of the questions
-
-GET
-
-/questions/17
-
-Returns the question number 17
-
-POST
-
-/questions
-
-Creates a new question
-
-PUT
-
-/questions/17
-
-Updates question number 17
-
-PATCH
-
-/questions/17
-
-Partially updates question number 17
-
-DELETE
-
-/questions/17
-
-Deletes question number 17
+Operation | URL | Function
+--- | --- | ---
+`GET` | 	/questions | Returns all of the questions
+`GET` | 	/questions/17 | Returns the question number 17
+`POST` | 	/questions | Creates a new question
+`PUT` | 	/questions/17 | Updates question number 17
+`PATCH` | 	/questions/17 | Partially updates question number 17
+`DELETE` | 	/questions/17 | Deletes question number 17
 
 Notice how to get a specific question, the API endpoint is *NOT*
 */question/name* but instead */questions/identifier*. This enables the
@@ -262,7 +229,7 @@ Task 1: Create a Lambda Function
 3.  In the **AWS Management Console**, on the Services menu, click
     **Lambda**.
 
-4.  Click Create a function
+4.  Click **Create a function**
 
 **Blueprints** are code templates for writing Lambda functions.
 Blueprints are provided for standard Lambda triggers such as creating
@@ -272,12 +239,12 @@ function by using **Author from scratch**.
 
 5.  Below **Author from scratch**, Configure:
 
--   **Function name:**
+-   **Function name:** `FAQ`
 -   **Runtime:** *Node.js 8.10*
 -   Expand **Choose or create an execution role**
 -   **Execution role:** *Use an existing role*
 -   **Existing role:** *lambda-basic-execution*
--   Click Create function
+-   Click **Create function**
 
 A page will be displayed with your function configuration.
 
@@ -370,7 +337,7 @@ Examine the code. It is performs the following steps:
 
 8.  Scroll down to the **Basic settings** section.
 
-9.  For **Description**, enter:
+9.  For **Description**, enter: `Provide a random FAQ`
 
 AWS Lambda functions can be **triggered** automatically by activities
 such as data being received by Amazon Kinesis or data being updated in
@@ -393,8 +360,8 @@ when creating an API.
 -   **API:** *Create a new API*
 -   **Security:** *Open*
 -   Expand **Additional settings**
--   **API name:**
--   **Deployment stage:**
+-   **API name:** `FAQ-API`
+-   **Deployment stage:** `myDeployment`
 
 13. At the bottom right-side of the screen, click Add.
 
@@ -428,7 +395,7 @@ The Lambda function can also be tested in isolation.
 
 18. At the top of the screen, Click Test then configure:
 
--   **Event name:**
+-   **Event name:** `BasicTest`
 -   Delete the provided keys and values, retaining an empty **{}** to
     represent an empty JSON object:
 
@@ -452,7 +419,7 @@ see any console logging as well as any error messages.
 
 22. Click the **Monitoring** tab.
 
-23. Click View logs in CloudWatch
+23. Click **View logs in CloudWatch**
 
 24. Click on one of the log streams.
 

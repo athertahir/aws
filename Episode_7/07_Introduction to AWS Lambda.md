@@ -54,17 +54,17 @@ The following diagram illustrates the application flow:
 
 ![Overview 1](./overview1.png)
 
-1 A user uploads an object to the source bucket in **Amazon S3**
+1. A user uploads an object to the source bucket in **Amazon S3**
 (object-created event).
 
-2 Amazon S3 detects the object-created event.
+2. Amazon S3 detects the object-created event.
 
-3 Amazon S3 publishes the object-created event to AWS Lambda by invoking
+3. Amazon S3 publishes the object-created event to AWS Lambda by invoking
 the Lambda function and passing event data as a function parameter.
 
-4 AWS Lambda executes the Lambda function.
+4. AWS Lambda executes the Lambda function.
 
-5 From the event data it receives, the Lambda function knows the source
+5. From the event data it receives, the Lambda function knows the source
 bucket name and object key name. The Lambda function reads the object
 and creates a thumbnail using graphics libraries, then saves the
 thumbnail to the target bucket.
@@ -92,10 +92,10 @@ to the bucket name.
 
 4.  Click ** Create bucket then configure:
 
--   **Bucket name:**
+-   **Bucket name:** `images-NUMBER`
 -   Replace **NUMBER** with a random number
 -   Copy the name of your bucket to a text editor
--   Click Create
+-   Click **Create**
 
 Every bucket in Amazon S3 requires a unique name such as
 *images-34523452345*.
@@ -106,13 +106,13 @@ and try again until it works.
 
 You will now create another bucket for output.
 
-5.  Click ** Create bucket then configure:
+5.  Click **Create bucket** then configure:
 
 -   **Bucket name:** Paste the name of your *images* bucket
--   At the end of the bucket name, append
--   Click Create
+-   At the end of the bucket name, append `-resized`
+-   Click **Create**
 
-** Do not change the Region.
+Do not change the Region.
 
 You should now have buckets named similar to:
 
@@ -126,7 +126,7 @@ You will now upload a picture for testing purposes.
 
 7.  Name the file **HappyFace.jpg**.
 
-** Firefox users: Make sure the saved filename is *HappyFace.jpg* (not
+Firefox users: Make sure the saved filename is *HappyFace.jpg* (not
 *.jpeg)*.
 
 8.  Open the image on your computer.
@@ -170,7 +170,7 @@ from scratch**.
 
 16. In the **Create function** window, configure:
 
--   **Function name:**
+-   **Function name:** `Create-Thumbnail`
 -   **Runtime:** *Python 3.7*
 -   Expand **Choose or create an execution role**
 -   **Execution role:** *Use an existing role*
@@ -207,9 +207,9 @@ You will now configure the Lambda function.
 
 -   **Code entry type:** *Upload a file from Amazon S3*
 -   **Runtime:** *Python 3.7*
--   **Handler:**
+-   **Handler:** `CreateThumbnail.handler`
 
-** Make sure you set the **Handler** field to the above value, otherwise
+Make sure you set the **Handler** field to the above value, otherwise
 the Lambda function will not be found.
 
 -   **Amazon S3 link URL:** Copy and paste this URL into the field:
@@ -220,8 +220,7 @@ https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-88/2.3.pr
 
 The *CreateThumbnail.zip* file contains the following Lambda function:
 
-** Do not copy this code -- it is just showing you what is in the Zip
-file.
+<span style="color:red;">Do not copy this code -- it is just showing you what is in the Zip file.</span>
 
 ```
 import boto3
@@ -259,7 +258,7 @@ def handler(event, context):
 -   Uploads the resized image to the *-resized* bucket
 
 23. In the **Basic settings** section towards the bottom of the page,
-    for **Description** enter:
+    for **Description** enter: `Create a thumbnail-sized image`
 
 You will leave the other settings as default, but here is a brief
 explanation of these settings:
@@ -289,7 +288,7 @@ S3 when a new object is uploaded.
 25. At the top of the screen, click Test then configure:
 
 -   **Event template:** *Amazon S3 Put*
--   **Event name:**
+-   **Event name:** `Upload`
 
 A sample template will be displayed that shows the event data sent to a
 Lambda function when it is triggered by an upload into Amazon S3. You
@@ -304,7 +303,7 @@ Be sure to replace **example-bucket** in both locations.
 ![bucket](./bucket.png)
 
 27. Replace **test/key** with the name of the picture that you uploaded.
-    This should be
+    This should be `HappyFace.jpg`
 
 ![key](./key.png)
 
@@ -318,7 +317,7 @@ input image.
 Towards the top of the page you should see the message: *Execution
 result: succeeded*
 
-** If your test did not succeed, the error message will explain the
+If your test did not succeed, the error message will explain the
 cause of failure. For example, a *Forbidden* message means that the
 image was not found possibly due to an incorrect bucket name. Review the
 previous steps to confirm that you have configured the function

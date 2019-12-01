@@ -75,7 +75,7 @@ maintaining consistent and fast performance.
 
 ### DynamoDB Terminology
 
-**Tables**\
+**Tables**
  Similar to other database management systems, DynamoDB stores data in
 tables. A table is a collection of data. For example, in this lab you
 will create a table named SuperMission, where you will store mission
@@ -83,7 +83,7 @@ information. You could also have a People table to store data about
 friends, family, or anyone else of interest, or a Cars table to store
 information about vehicles that people drive.
 
-**Items**\
+**Items**
  Each table contains multiple items. An item is a group of attributes
 that is uniquely identifiable among all of the other items. In a People
 table, each item would represent one person. For a Cars table, each item
@@ -91,7 +91,7 @@ represents one vehicle. Items are similar in many ways to rows, records,
 or tuples in relational database systems. In DynamoDB, there is no limit
 to the number of items that you can store in a table.
 
-**Attributes**\
+**Attributes**
  Each item is composed of one or more attributes. An attribute is a
 fundamental data element, something that does not need to be broken down
 any further. In this lab, you will create a Mission item with attributes
@@ -102,7 +102,7 @@ People table could contain attributes such as PersonID, LastName,
 FirstName, and so on. Attributes in DynamoDB are similar in many ways to
 fields or columns in other database management systems.
 
-**Primary Key**\
+**Primary Key
  When you create a table, in addition to the table name, you must
 specify the primary key of the table. As in other databases, a primary
 key in DynamoDB uniquely identifies each item in the table, so that no
@@ -112,7 +112,7 @@ item. The key values are required; you cannot omit them. DynamoDB
 supports two different kinds of primary keys: **Partition Key** and
 **Partition Key and Sort Key**.
 
-**Secondary Indexes**\
+**Secondary Indexes
  In DynamoDB, you can read data in a table by providing primary key
 attribute values. If you want to read the data using non-key attributes,
 you can use a secondary index to do this. After you create a secondary
@@ -178,9 +178,10 @@ Task 1: Create Your DynamoDB Table
 
 4.  Click Create table then configure:
 
--   **Table name:**
--   **Primary key:**
-    -   -   *String*
+- **Table name:** `SuperMission`
+- **Primary key:**
+    * SuperHero
+    * String
 
 You will use the default settings to create the table.
 
@@ -207,7 +208,7 @@ In this task, you will add items to the table using the Tree method.
 
 The first item **Field** is already populated for you with *SuperHero*.
 
-8.  For **Value**, enter:
+8.  For **Value**, enter: `Batman`
 
 9.  Add the next attribute by clicking the ** symbol, then:
 
@@ -403,24 +404,6 @@ experience.
 
 26. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**,
     and then click **Sign Out**.
-
-27. Click End Lab
-
-28. Click OK
-
-29. (Optional):
-
--   Select the applicable number of stars **
--   Type a comment
--   Click **Submit**
-
-    -   1 star = Very dissatisfied
-    -   2 stars = Dissatisfied
-    -   3 stars = Neutral
-    -   4 stars = Satisfied
-    -   5 stars = Very satisfied
-
-You may close the dialog if you don't want to provide feedback.
 
 ### What Next?
 
