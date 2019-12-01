@@ -238,8 +238,7 @@ users' existing key pair names before it creates any resources, such as
 Amazon EC2 instances.
 
 17. In the **CloudFormation Management Console**, compare the rest of
-    the parameters to the parameters defined in the template, then click
-    Next
+    the parameters to the parameters defined in the template, then click **Next**
 
 ### Explore CloudFormation Options
 
@@ -254,7 +253,7 @@ settings.
     from unintentional updates during a stack update. By default, all
     resources can be updated during a stack update.
 
-18. Click **** Stack creation options**
+18. Click **Stack creation options**
 
 -   **Rollback on failure:** Specifies whether the stack should be
     rolled back if stack creation fails. Typically, you want to accept
@@ -296,7 +295,7 @@ In this task, you will monitor the CloudFormation stack creation.
 
 The **Template** tab, displays the contents of your template.
 
-** If you do not see the **Template** tab, it might be due to your
+If you do not see the **Template** tab, it might be due to your
 window width. If this is the case, you should be able to widen your
 window so that the template appears.
 

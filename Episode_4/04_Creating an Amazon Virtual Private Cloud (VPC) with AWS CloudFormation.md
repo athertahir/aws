@@ -98,7 +98,7 @@ The stack status will be *CREATE\_IN\_PROGRESS* until the resources have been cr
 
 While you are waiting, look in the **Events** tab to view the work being performed by CloudFormation.
 
-** If you do not see the **Events** tab, it is because your web browser window is too narrow. Either make the window wider until the tabs appear, or click the pull-down arrow in the **Overview** tab.
+If you do not see the **Events** tab, it is because your web browser window is too narrow. Either make the window wider until the tabs appear, or click the pull-down arrow in the **Overview** tab.
 
 10. Click the **Stack info** tab.
 

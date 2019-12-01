@@ -197,7 +197,7 @@ address. We will use this IP address to SSH into our instance.
 ### SSH into EC2 instance
 
 If you are using Linux or MacOS open your **terminal**, if you are using
-Windows, download [**git bash**](https://git-scm.com/downloads)****to
+Windows, download [**git bash**](https://git-scm.com/downloads) to
 continue.
 
 ​1. In terminal or git bash, navigate to the folder where you have saved
