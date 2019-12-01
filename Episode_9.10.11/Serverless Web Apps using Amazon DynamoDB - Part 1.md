@@ -219,33 +219,14 @@ The first item **Field** is already populated for you with *SuperHero*.
     one at a time. To add the next attribute, click **, click
     **Append**, then click **String**.
 
-Field
-
-Value
-
-SuperHero (already populated for you)
-
-Batman
-
-MissionStatus
-
-In progress
-
-Villain1
-
-Joker
-
-Villain2
-
-Bane
-
-Villain3
-
-Ras Al Ghul
-
-SecretIdentity
-
-Bruce Wayne
+Field | Value
+--- | ---
+`SuperHero` | Batman
+`MissionStatus` |  In progress
+`Villain1` | Joker
+`Villain2` | Bane
+`Villain3` | Ras Al Ghul
+`SecretIdentity` | Bruce Wayne
 
 When you finish, your item should look similar to:
 
