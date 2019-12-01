@@ -142,7 +142,7 @@ Management Console.
 -   Replace **NUMBER** with a random number
 -   Click Create
 
-** If you receive an error stating **The requested bucket name is not
+If you receive an error stating **The requested bucket name is not
 available**, click the first **Edit** link, change the bucket name and
 try again until it works.
 
@@ -382,7 +382,7 @@ To view your website, retrieve the **Endpoint** that you earlier saved
 into a Text Editor. It should look something like:
 *http://wordpress-jb92.s3-website-us-west-2.amazonaws.com*
 
-** If you cannot find the endpoint, return to the web browser tab with
+If you cannot find the endpoint, return to the web browser tab with
 the S3 console, click **Static website hosting** and then click the
 **Endpoint** that is displayed.
 
@@ -433,7 +433,7 @@ If you cannot find the tab, retrieve the **Endpoint** that you earlier
 saved into a Text Editor. It should look something like:
 *http://wordpress-jb92.s3-website-us-west-2.amazonaws.com*
 
-** If you cannot find the Endpoint, return to the web browser tab with
+If you cannot find the Endpoint, return to the web browser tab with
 the S3 Management Console, click **Static website hosting** and click
 the **Endpoint** that is displayed.
 

@@ -100,7 +100,7 @@ to the bucket name.
 Every bucket in Amazon S3 requires a unique name such as
 *images-34523452345*.
 
-** If you receive an error stating **The requested bucket name is not
+If you receive an error stating **The requested bucket name is not
 available**, then click the first **Edit** link, change the bucket name
 and try again until it works.
 

@@ -79,13 +79,13 @@ The Lab VPC was created using a CloudFormation template during the setup process
 
 1.  For **Enable termination protection**, select **Protect against accidental termination**.
 
-** When an Amazon EC2 instance is no longer required, it can be *terminated*, which means that the instance is stopped and its resources are released. A terminated instance cannot be started again. If you want to prevent the instance from being accidentally terminated, you can enable *termination protection* for the instance, which prevents it from being terminated.
+When an Amazon EC2 instance is no longer required, it can be *terminated*, which means that the instance is stopped and its resources are released. A terminated instance cannot be started again. If you want to prevent the instance from being accidentally terminated, you can enable *termination protection* for the instance, which prevents it from being terminated.
 
 1.  Scroll down, then expand **Advanced Details**.
 
 A field for **User data** will appear.
 
-** When you launch an instance, you can pass *user data* to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts.
+When you launch an instance, you can pass *user data* to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts.
 
 Your instance is running Amazon Linux, so you will provide a *shell script* that will run when the instance starts.
 
@@ -129,7 +129,7 @@ You will launch the Amazon EC2 instance using a default 8 GiB disk volume. This 
 
 ### Step 6: Configure Security Group
 
-** A *security group* acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you associate one or more security groups with the instance. You add *rules* to each security group that allow traffic to or from its associated instances. You can modify the rules for a security group at any time; the new rules are automatically applied to all instances that are associated with the security group.
+A *security group* acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you associate one or more security groups with the instance. You add *rules* to each security group that allow traffic to or from its associated instances. You can modify the rules for a security group at any time; the new rules are automatically applied to all instances that are associated with the security group.
 
 1.  On **Step 6: Configure Security Group**, configure:
 
@@ -152,7 +152,7 @@ The Review page displays the configuration for the instance you are about to lau
 
 A **Select an existing key pair or create a new key pair** window will appear.
 
-** Amazon EC2 uses public–key cryptography to encrypt and decrypt login information. To log in to your instance, you must create a key pair, specify the name of the key pair when you launch the instance, and provide the private key when you connect to the instance.
+Amazon EC2 uses public–key cryptography to encrypt and decrypt login information. To log in to your instance, you must create a key pair, specify the name of the key pair when you launch the instance, and provide the private key when you connect to the instance.
 
 In this lab you will not log into your instance, so you do not require a key pair.
 
@@ -164,9 +164,9 @@ YOU MUST select **Proceed without a key pair** below. If you do not select this,
 
 3.  Click Launch Instances
 
-Your instance will now be launched.
+    Your instance will now be launched.
 
-1.  Click View Instances
+4.  Click View Instances
 
 The instance will appear in a *pending* state, which means it is being launched. It will then change to *running*, which indicates that the instance has started booting. There will be a short time before you can access the instance.
 
@@ -192,7 +192,7 @@ Monitoring is an important part of maintaining the reliability, availability, an
 
 1.  Click the **Status Checks** tab.
 
-** With instance status monitoring, you can quickly determine whether Amazon EC2 has detected any problems that might prevent your instances from running applications. Amazon EC2 performs automated checks on every running EC2 instance to identify hardware and software issues.
+With instance status monitoring, you can quickly determine whether Amazon EC2 has detected any problems that might prevent your instances from running applications. Amazon EC2 performs automated checks on every running EC2 instance to identify hardware and software issues.
 
 Notice that both the **System reachability** and **Instance reachability** checks have passed.
 
@@ -204,25 +204,25 @@ You can click on a graph to see an expanded view.
 
 Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances. Basic (five-minute) monitoring is enabled by default. You can enable detailed (one-minute) monitoring.
 
-1.  In the Actions menu, select **Instance Settings > **Get System Log**.
+1.  In the Actions menu, select **Instance Settings** > **Get System Log**.
 
 The System Log displays the console output of the instance, which is a valuable tool for problem diagnosis. It is especially useful for troubleshooting kernel problems and service configuration issues that could cause an instance to terminate or become unreachable before its SSH daemon can be started. If you do not see a system log, wait a few minutes and then try again.
 
 1.  Scroll through the output and note that the HTTP package was installed from the **user data** that you added when you created the instance.
 
-![Console-Output](./Console-output.png)
+    ![Console-Output](./Console-output.png)
 
-1.  Click Close
+2.  Click Close
 
-2.  In the Actions menu, select **Instance Settings > **Get Instance Screenshot**.
+3.  In the Actions menu, select **Instance Settings** > **Get Instance Screenshot**.
 
-This shows you what your Amazon EC2 instance console would look like if a screen were attached to it.
+    This shows you what your Amazon EC2 instance console would look like if a screen were attached to it.
 
-![Screen-shot](./Screen-shot.png)
+    ![Screen-shot](./Screen-shot.png)
 
-if you are unable to reach your instance via SSH or RDP, you can capture a screenshot of your instance and view it as an image. This provides visibility as to the status of the instance, and allows for quicker troubleshooting.
+    if you are unable to reach your instance via SSH or RDP, you can capture a screenshot of your instance and view it as an image. This provides visibility as to the status of the instance, and allows for quicker troubleshooting.
 
-1.  Click Close
+4.  Click Close
 
 **Congratulations!** You have explored several ways to monitor your instance.
 
@@ -282,19 +282,19 @@ When you stop an instance, it is shut down. There is no charge for a stopped EC2
 
 1.  On the **EC2 Management Console**, in the left navigation pane, click **Instances**.
 
-**Web Server** should already be selected.
+    **Web Server** should already be selected.
 
-1.  In the Actions menu, select **Instance State > **Stop**.
+2.  In the Actions menu, select **Instance State > **Stop**.
 
-2.  Click Yes, Stop
+3.  Click Yes, Stop
 
-Your instance will perform a normal shutdown and then will stop running.
+    Your instance will perform a normal shutdown and then will stop running.
 
-1.  Wait for the **Instance State** to display: stopped
+4.  Wait for the **Instance State** to display: stopped
 
 ### Change The Instance Type
 
-1.  In the Actions menu, select **Instance Settings > **Change Instance Type**, then configure:
+1.  In the Actions menu, select **Instance Settings** > **Change Instance Type**, then configure:
 
 -   **Instance Type:** *t2.small*
 -   Click Apply
@@ -307,15 +307,15 @@ When the instance is started again it will be a *t2.small*, which has twice as m
 
 2.  In the Actions menu, select **Modify Volume**.
 
-The disk volume currently has a size of 8 GiB. You will now increase the size of this disk.
+    The disk volume currently has a size of 8 GiB. You will now increase the size of this disk.
 
-1.  Change the size to:
+4.  Change the size to:
 
-2.  Click Modify
+5.  Click Modify
 
-3.  Click Yes to confirm and increase the size of the volume.
+6.  Click Yes to confirm and increase the size of the volume.
 
-4.  Click Close
+7.  Click Close
 
 ### Start the Resized Instance
 
@@ -355,23 +355,23 @@ In this task, you will learn how to use *termination protection*.
 
 2.  In the Actions menu, select **Instance State > **Terminate**.
 
-Note that there is a message that says: *These instances have Termination Protection and will not be terminated. Use the Change Termination Protection option from the Instances screen Actions menu to allow termination of these instances.*
+    Note that there is a message that says: *These instances have Termination Protection and will not be terminated. Use the Change Termination Protection option from the Instances screen Actions menu to allow termination of these instances.*
 
-Also, the Yes, Terminate button is dimmed and cannot be clicked.
+    Also, the Yes, Terminate button is dimmed and cannot be clicked.
 
-This is a safeguard to prevent the accidental termination of an instance. If you really want to terminate the instance, you will need to disable the termination protection.
+    This is a safeguard to prevent the accidental termination of an instance. If you really want to terminate the instance, you will need to disable the termination protection.
 
-1.  Click Cancel.
+3.  Click Cancel.
 
-2.  In the Actions menu, select **Instance Settings > **Change Termination Protection**.
+4.  In the Actions menu, select **Instance Settings** > **Change Termination Protection**.
 
-3.  Click Yes, Disable
+5.  Click Yes, Disable
 
-You can now terminate the instance.
+    You can now terminate the instance.
 
-1.  In the Actions menu, select **Instance State > **Terminate**.
+6.  In the Actions menu, select **Instance State > **Terminate**.
 
-2.  Click Yes, Terminate
+7.  Click Yes, Terminate
 
 **Congratulations!** You have successfully tested termination protection and terminated your instance.
 

@@ -172,7 +172,7 @@ You should see one stack with a status of **CREATE\_IN\_PROGRESS**.
 4.  Wait for the status to change to **CREATE\_COMPLETE** before you
     proceed.
 
-** If you do not see a stack being created, double check that you are in
+If you do not see a stack being created, double check that you are in
 the "N. Virginia" region. The CloudFormation template is preparing what
 you need to complete this lab. It may take a few minutes for all the
 resources to be ready. While you wait, you can observe the creation

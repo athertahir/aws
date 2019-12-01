@@ -79,7 +79,7 @@ WordPress blog.
 4.  In the **AWS Management Console**, on the Services menu, click
     **CloudFormation**.
 
-** If you see a notification banner at the top that says The redesigned
+If you see a notification banner at the top that says The redesigned
 AWS CloudFormation console is available now.. Go ahead and click *Try it
 out now and provide us feedback* to open the updated CloudFormation
 interface.
