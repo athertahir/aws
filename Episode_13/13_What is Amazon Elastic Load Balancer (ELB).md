@@ -237,8 +237,8 @@ the end.
 ​8. Click the + sign at the top to add a rule. In Add Condition select
 "**Path is**" and type **/blog**.
 
-​9. Then in Add Action select **Forward to** and select **Blog**and then
-click**Save.**
+​9. Then in Add Action select **Forward to** and select **Blog** and then
+click **Save.**
 
 ![](./1_x1YeJydWH8g9MRHXqq5Bcg.png)
 

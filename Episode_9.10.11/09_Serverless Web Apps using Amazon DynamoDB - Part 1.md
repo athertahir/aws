@@ -102,7 +102,7 @@ People table could contain attributes such as PersonID, LastName,
 FirstName, and so on. Attributes in DynamoDB are similar in many ways to
 fields or columns in other database management systems.
 
-**Primary Key
+**Primary Key**
  When you create a table, in addition to the table name, you must
 specify the primary key of the table. As in other databases, a primary
 key in DynamoDB uniquely identifies each item in the table, so that no
@@ -112,7 +112,7 @@ item. The key values are required; you cannot omit them. DynamoDB
 supports two different kinds of primary keys: **Partition Key** and
 **Partition Key and Sort Key**.
 
-**Secondary Indexes
+**Secondary Indexes**
  In DynamoDB, you can read data in a table by providing primary key
 attribute values. If you want to read the data using non-key attributes,
 you can use a secondary index to do this. After you create a secondary
@@ -180,7 +180,7 @@ Task 1: Create Your DynamoDB Table
 
 - **Table name:** `SuperMission`
 - **Primary key:**
-    * SuperHero
+    * `SuperHero`
     * String
 
 You will use the default settings to create the table.
@@ -200,8 +200,8 @@ In this task, you will add items to the table using the Tree method.
 
 6.  Once the table creation process is complete:
 
--   Click the **Items** tab
--   Click Create item
+    -   Click the **Items** tab
+    -   Click Create item
 
 7.  Confirm that **Tree** is selected in the top-left of the *Create
     item* dialog box.
@@ -212,8 +212,8 @@ The first item **Field** is already populated for you with *SuperHero*.
 
 9.  Add the next attribute by clicking the symbol, then:
 
--   Clicking **Append**
--   Selecting **String**
+    -   Clicking **Append**
+    -   Selecting **String**
 
 10. Using the table below, enter each item as **Field** and **Value**,
     one at a time. To add the next attribute, click **, click
@@ -241,8 +241,8 @@ In this task, you will add an item as JSON.
 
 12. Click Create Item then configure:
 
--   Click **Tree**
--   Select **Text**
+    -   Click **Tree**
+    -   Select **Text**
 
 13. Delete all text in the editor.
 
@@ -408,9 +408,8 @@ experience.
 ### What Next?
 
 Now that you have completed the lab, continue your mission to save the
-world with the next lab in the series with **Serverless Web Apps Using
-Amazon DynamoDB - Part 2**. In the next lab, you will leverage the
-DynamoDB table that you created.
+world with the next lab in the series with **Serverless Web Apps Using Amazon DynamoDB - Part 2**. 
+In the next lab, you will leverage the DynamoDB table that you created.
 
 ### Additional Resources
 

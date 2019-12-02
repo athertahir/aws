@@ -145,7 +145,7 @@ themselves declared as child objects. A resource must have a *Type*
 attribute, which defines the kind of AWS resource you want to create.
 The *Type* attribute has a special format:
 
-``` {.highlight .plaintext}
+```
 AWS::ProductIdentifier::ResourceType
 ```
 
@@ -226,8 +226,7 @@ Description: Basic S3 Bucket CloudFormation template
 You will now use AWS CloudFormation to create a stack of AWS resources.
 
 3.  Download this template to your computer:
-    [lab1.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab1.yaml)
-    template.
+    [lab1.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab1.yaml) template.
 
 The template contains:
 
@@ -342,8 +341,7 @@ the stack.
 ### Download and View the Template
 
 19. Download the
-    [lab2.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab2.yaml)
-    template and examine it.
+    [lab2.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab2.yaml) template and examine it.
 
 The template file should now look like this:
 
@@ -715,8 +713,7 @@ in the template. To illustrate this, you will update your EC2 instance
 so that it is tagged with a name and you will also open port 22.
 
 56. Download and examine the
-    [lab4.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab4.yaml)
-    template.
+    [lab4.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab4.yaml) template.
 
 This code adds a name tag to your EC2 instance
 
@@ -798,8 +795,7 @@ API calls. Suppose that a new version of the application requires access
 to the Amazon EC2 read-only APIs from the instance.
 
 69. Download and examine the updated template:
-    [lab5.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab5.yaml)
-    template.
+    [lab5.yaml](https://s3-us-west-2.amazonaws.com/us-west-2-aws-training/awsu-spl/spl-10/3.6.11.prod/scripts/lab5.yaml) template.
 
 This code is providing the name of another role that was created as part
 of the lab setup. The role **ec2-role-2** was created as part of the lab

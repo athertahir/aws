@@ -40,19 +40,12 @@ By the end of this lab you will be able to:
 Lab Pre-requisites 
 ------------------
 
-You should familiarize yourself with key concepts by taking the
-[Introduction to Amazon
-DynamoDB](https://s3-us-west-2.amazonaws.com/searches/lab?keywords=Introduction%20to%20Amazon%20DynamoDB)
-lab. This is the third in a three-part series of labs. Each of the three
+This is the third in a three-part series of labs. Each of the three
 labs can stand alone, but because the labs build upon what you learned
-previously, taking [Serverless Web Apps using Amazon DynamoDB - Part
-1](https://s3-us-west-2.amazonaws.com/searches/lab?keywords=Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%201)
-and [Serverless Web Apps using Amazon DynamoDB - Part
-2](https://s3-us-west-2.amazonaws.com/searches/lab?keywords=Serverless%20Web%20Apps%20using%20Amazon%20DynamoDB%20-%20Part%202)
-prior to this lab is the best learning experience.
+previously, taking **Serverless Web Apps using Amazon DynamoDB - Part 1**
+and **Serverless Web Apps using Amazon DynamoDB - Part 2** prior to this lab 
+is the best learning experience.
 
-The qwikLABS lab environment is not accessible using an iPad or tablet
-device, but you can use these devices to view the lab instructions.
 
 Other AWS Services 
 ------------------
@@ -214,15 +207,15 @@ You will see two IAM roles: *SuperDynamoDBScanRole* and
 
 10. Click on the **SuperDynamoDBQueryRole**, then:
 
--   Notice that the **SuperDynamoDBQueryPolicy** is attached to the
-    **SuperDynamoDBQueryRole**
--   What does this policy allow?
+    -   Notice that the **SuperDynamoDBQueryPolicy** is attached to the
+        **SuperDynamoDBQueryRole**
+    -   What does this policy allow?
 
 11. Click on the **SuperDynamoDBScanRole**, then:
 
--   Notice that the **SuperDynamoDBScanPolicy** is attached to the
-    **SuperDynamoDBScanRole**
--   What does this policy allow?
+    -   Notice that the **SuperDynamoDBScanPolicy** is attached to the
+        **SuperDynamoDBScanRole**
+    -   What does this policy allow?
 
 Task 3: Create and Deploy an API 
 --------------------------------
@@ -352,13 +345,13 @@ HTTP requests to servers with a different domain/origin.
 
 33. On the Actions menu, click **Deploy API**, then configure:
 
--   **Deployment stage:** *New Stage*
--   **Stage name:** `Demo1`
--   Click Deploy
+    -   **Deployment stage:** *New Stage*
+    -   **Stage name:** `Demo1`
+    -   Click Deploy
 
-** Congratulations, you have deployed the API!
+**Congratulations**, you have deployed the API!
 
-Task 4: Generate the SDK For Your API [step9]
+Task 4: Generate the SDK For Your API
 -------------------------------------
 
 In this task, you will generate the SDK for your API. After deploying
@@ -367,8 +360,8 @@ the API, you will be redirected to the Demo1 Stage Editor.
 34. On the stage editor, click the **SDK Generation** tab, then
     configure:
 
--   **Platform:** *Javascript*
--   Click Generate SDK
+    -   **Platform:** *Javascript*
+    -   Click Generate SDK
 
 35. Save the zip file to a location on your computer.
 
@@ -426,12 +419,12 @@ Task 5: Publish With S3
 
 46. Click `Create bucket` then configure:
 
--   **Bucket name:** `mybucketNUMBER`
--   Replace **NUMBER** with a random number - bucket names must be
-    unique
--   Copy the name of the bucket to your editor
--   **Region:** US East (N. Virginia)
--   Click Create
+    -   **Bucket name:** `mybucketNUMBER`
+    -   Replace **NUMBER** with a random number - bucket names must be
+        unique
+    -   Copy the name of the bucket to your editor
+    -   **Region:** US East (N. Virginia)
+    -   Click Create
 
 47. Click your bucket to open it.
 
@@ -443,8 +436,8 @@ Task 5: Publish With S3
 
 51. Click Save then:
 
--   Enter `confirm`
--   Click Confirm
+    -   Enter `confirm`
+    -   Click Confirm
 
 52. Click Bucket Policy
 
@@ -473,16 +466,16 @@ Task 5: Publish With S3
 
 57. Click **Static website hosting**, then configure:
 
--   Select **Use this bucket to host a website**.
--   **Index document:** `index.html`
--   Click Save
+    -   Select **Use this bucket to host a website**.
+    -   **Index document:** `index.html`
+    -   Click Save
 
 58. click the **Overview** tab, then:
 
--   Using your computer's file system explorer, locate the folder
-    (*apiGateway-jf-sdk*) that you saved the **index.html** file in
--   Drag and then drop the entire **apiGateway-jf-sdk** folder to the
-    **Overview** tab area.
+    -   Using your computer's file system explorer, locate the folder
+        (*apiGateway-jf-sdk*) that you saved the **index.html** file in
+    -   Drag and then drop the entire **apiGateway-jf-sdk** folder to the
+        **Overview** tab area.
 
 ![dragDrop](./dragDrop.png)
 
@@ -494,9 +487,9 @@ This will upload the foder and its contents to your S3 bucket.
 
 61. Open a new browser tab/window, then:
 
--   Paste the following URL: `http://BUCKET.s3-website-us-east-1.amazonaws.com/apiGateway-js-sdk/index.html`
--   Replace **BUCKET** with the name of your bucket
--   Press **Enter**
+    -   Paste the following URL: `http://BUCKET.s3-website-us-east-1.amazonaws.com/apiGateway-js-sdk/index.html`
+    -   Replace **BUCKET** with the name of your bucket
+    -   Press **Enter**
 
 ![superman](./superman.png)
 
@@ -530,7 +523,7 @@ You now know how to:
 
 ... and save the world from villainy!
 
-End Lab {#step13}
+End Lab
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the

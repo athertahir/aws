@@ -328,7 +328,7 @@ experience.
 31. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**,
     and then click **Sign Out**.
 
-Conclusion [step9]
+Conclusion
 ----------
 
 Congratulations! You have completed this lab. You have successfully:

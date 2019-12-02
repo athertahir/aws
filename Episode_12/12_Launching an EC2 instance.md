@@ -66,9 +66,9 @@ over the info button after each option to learn more about that option.
 5.  **Auto-assign Public IP** — When this option is enabled your EC2
     instance gets a public IP. You can then host a website on this
     server and access it via instance’s public IP.
-6.  **Placement Group — **You can add this instance to a placement group
+6.  **Placement Group —** You can add this instance to a placement group
     by selecting this option.
-7.  **Capacity Reservation — **Using this option you can reserve
+7.  **Capacity Reservation —** Using this option you can reserve
     capacity of your instance in an availability zone. Leave this option
     as default.
 8.  **IAM role** — You can assign an IAM role to this instance to allow
@@ -238,6 +238,3 @@ You will see a page similar to this.
 
 Congratulations, you have just installed an apache server on your EC2
 instance.
-
-Now you can terminate the instance from the EC2 dashboard using the
-Actions tab in the navigation.
