@@ -71,11 +71,9 @@ task, you will connect to the instance.
 
 These instructions are for Windows users only.
 
-If you are using Mac or Linux, [skip to the next
-section](https://run.qwiklabs.com/focuses/8375?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3933115#ssh-MACLinux).
+If you are using Mac or Linux, skip to the next section.
 
-1.  To the left of the instructions you are currently reading, click **
-    **Download PPK**.
+1.  To the left of the instructions you are currently reading, click **Download PPK**.
 
 2.  Save the file to the directory of your choice.
 
@@ -89,7 +87,7 @@ here](https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe).
 2.  Configure the PuTTY to not timeout:
 
 -   Click **Connection**
--   Set **Seconds between keepalives** to
+-   Set **Seconds between keepalives** to `30`
 
 This allows you to keep the PuTTY session open for a longer period of
 time.
@@ -112,17 +110,15 @@ time.
 
 This will connect to your EC2 instance.
 
-1.  [Windows Users: Click here to skip ahead to the next
-    task.](https://run.qwiklabs.com/focuses/8375?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3933115#ssh-after)
+1.  Windows Users: skip ahead to the next task.
 
 ### Mac and Linux Users
 
 These instructions are for Mac/Linux users only. If you are a Windows
-user, [skip ahead to the next
-task.](https://run.qwiklabs.com/focuses/8375?catalog_rank=%7B%22rank%22%3A3%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3933115#ssh-after)
+user, skip ahead to the next task.
 
-1.  To the left of the instructions you are currently reading, click **
-    **Download PEM**.
+
+1.  To the left of the instructions you are currently reading, click **Download PEM**.
 
 2.  Save the file to the directory of your choice.
 

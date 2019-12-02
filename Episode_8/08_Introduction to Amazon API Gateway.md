@@ -239,12 +239,12 @@ function by using **Author from scratch**.
 
 5.  Below **Author from scratch**, Configure:
 
--   **Function name:** `FAQ`
--   **Runtime:** *Node.js 8.10*
--   Expand **Choose or create an execution role**
--   **Execution role:** *Use an existing role*
--   **Existing role:** *lambda-basic-execution*
--   Click **Create function**
+      -   **Function name:** `FAQ`
+      -   **Runtime:** *Node.js 8.10*
+      -   Expand **Choose or create an execution role**
+      -   **Execution role:** *Use an existing role*
+      -   **Existing role:** *lambda-basic-execution*
+      -   Click **Create function**
 
 A page will be displayed with your function configuration.
 
@@ -350,18 +350,18 @@ function whenever a call is made to API Gateway.
 
 You will create an API Gateway endpoint.
 
-** An API endpoint refers to a host name of the API. The API endpoint
+An API endpoint refers to a host name of the API. The API endpoint
 can be edge-optimized or regional, depending on where the majority of
 your API traffic originates from. You choose a specific endpoint type
 when creating an API.
 
 12. In the **Configure triggers** section configure:
 
--   **API:** *Create a new API*
--   **Security:** *Open*
--   Expand **Additional settings**
--   **API name:** `FAQ-API`
--   **Deployment stage:** `myDeployment`
+      -   **API:** *Create a new API*
+      -   **Security:** *Open*
+      -   Expand **Additional settings**
+      -   **API name:** `FAQ-API`
+      -   **Deployment stage:** `myDeployment`
 
 13. At the bottom right-side of the screen, click Add.
 
@@ -385,8 +385,7 @@ You will be presented with the FAQ Lambda function page.
 
 A new browser tab will open. You should see a random FAQ entry, such as:
 
-![Random
-FAQ](./random-faq.png)
+![Random FAQ](./random-faq.png)
 
 The Lambda function can also be tested in isolation.
 
@@ -448,129 +447,3 @@ experience.
 
 26. On the navigation bar, click **\<yourusername\>@\<AccountNumber\>**,
     and then click **Sign Out**.
-
-27. Click End Lab
-
-28. Click OK
-
-29. (Optional):
-
--   Select the applicable number of stars **
--   Type a comment
--   Click **Submit**
-
-    -   1 star = Very dissatisfied
-    -   2 stars = Dissatisfied
-    -   3 stars = Neutral
-    -   4 stars = Satisfied
-    -   5 stars = Very satisfied
-
-You may close the dialog if you don't want to provide feedback.
-
-Next Steps 
-----------
-
-This lab was intended to provide an introduction into microservices
-architecture patterns, why they are important and how to set up a basic
-open API.
-
-Now that you have completed the lab, take it a step further! Here are
-some additional things you could do to extend the functionality of your
-microservice in your own AWS account:
-
--   Control access to your endpoint by integrating AWS IAM.
--   Move the JSON object with the questions into a data store like
-    DynamoDB.
--   Implement a URL parameter that will return a specific question.
--   Implement an endpoint that returns all questions.
--   Implement a new method that adds a question into the list.
--   Checkout serverless development frameworks like
-    [Apex](https://github.com/apex/apex) or
-    [Serverless](https://github.com/serverless/serverless).
-
-Additional Resources [step9]
---------------------
-
--   [Best Practices for a Pragmatic RESTful
-    API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
--   [Amazon API Gateway
-    Documentation](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html)
--   [Amazon Lambda
-    Documentation](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
--   [Microservice Architecture patterns and best
-    practices](http://microservices.io/index.html)
--   [Representational State
-    Transfer](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
--   [Creating an API
-    Endpoint](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-create-api.html)
-
-For feedback, suggestions, or corrections, please email us at
-[*aws-course-feedback@amazon.com*](mailto:aws-course-feedback+spl@amazon.com).
-
-[Overview](https://run.qwiklabs.com/focuses/269?parent=catalog#step1)[Technical
-Concepts](https://run.qwiklabs.com/focuses/269?parent=catalog#step2)[Start
-Lab](https://run.qwiklabs.com/focuses/269?parent=catalog#step3)[Task 1:
-Create a Lambda
-Function](https://run.qwiklabs.com/focuses/269?parent=catalog#step4)[Task
-2: Test the Lambda
-function](https://run.qwiklabs.com/focuses/269?parent=catalog#step5)[Conclusion](https://run.qwiklabs.com/focuses/269?parent=catalog#step6)[End
-Lab](https://run.qwiklabs.com/focuses/269?parent=catalog#step7)[Next
-Steps](https://run.qwiklabs.com/focuses/269?parent=catalog#step8)[Additional
-Resources](https://run.qwiklabs.com/focuses/269?parent=catalog#step9)
-
-#### Ready for more? {.headline-3}
-
-Here's another lab we think you'll like.
-
-[](https://run.qwiklabs.com/focuses/363?parent=catalog)
-
-Hands-On Lab
-
-### Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation {.card--content__title}
-
-This lab will demonstrate how to create an Amazon Virtual Private Cloud
-(VPC) network using AWS CloudFormation. Note: This lab is a more of a
-walkthrough of a template rather than "learn how to build it". You will
-walk through the sections of an AWS CloudFormation template and get
-explanations for each step. You will then launch the AWS CloudFormation
-template to create a four-subnet Amazon VPC that spans two Availability
-Zones and a NAT that allows servers in the private subnets to
-communicate with the Internet in order to download packages and updates.
-
-Fundamental
-
-Welcome to Your First Lab! {.headline-1}
-==========================
-
-close
-
-Skip this video
-
-In this lab, you will create a simple FAQ microservice. The microservice
-will return a JSON object containing a random question and answer pair
-using an API Gateway endpoint that invokes a Lambda function.
-Prerequisites: students should take the lab "Introduction to AWS Lambda"
-before taking this lab.
-
-This lab is included in these quests: [Serverless Web Apps using Amazon
-DynamoDB](https://run.qwiklabs.com/quests/21), [Developer -
-Associate](https://run.qwiklabs.com/quests/20), [Serverless Design with
-AWS Lambda](https://run.qwiklabs.com/quests/17). If you complete this
-lab you'll receive credit for it when you enroll in one of these quests.
-
-**Duration:** 0m setup · 55m access · 35m completion
-
-**AWS Region:** [us-west-2] **US West (Oregon)**
-
-**Levels:**introductory
-
-**Permalink:**
-[https://run.qwiklabs.com/catalog\_lab/236](https://run.qwiklabs.com/catalog_lab/236)
-
-Got It
-
-How satisfied are you with this lab?\*
-
-Comment
-
-Cancel

@@ -191,22 +191,15 @@ Wordpress website.
 Task 3: Log in to your Amazon EC2 instance
 ------------------------------------------
 
-In this task, you log in to your Amazon EC2 instance. The Public IP
-address of the instance is displayed to the left of these instructions
-as *PublicIP*.
-
-[Mac/Linux users - click here for Login
-instructions](https://run.qwiklabs.com/focuses/347?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3928994#ssh-mac)
+In this task, you log in to your Amazon EC2 instance. You can creata new or use the existing one.  Public IP address of the instance is needed.
 
 ### Windows users: Using SSH to connect
 
-** These instructions are for Windows users only.
+These instructions are for Windows users only.
 
-If you are using Mac or Linux, [skip to the next
-section](https://run.qwiklabs.com/focuses/347?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3928994#ssh-MACLinux).
+If you are using Mac or Linux, skip to the next section.
 
-25. To the left of the instructions you are currently reading, click **
-    **Download PPK**.
+25. To the left of the instructions you are currently reading, click **Download PPK**.
 
 26. Save the file to the directory of your choice.
 
@@ -244,8 +237,7 @@ If you do not see **PublicIP**, wait a few minutes for it to appear.
 
 This will connect to your EC2 instance.
 
-32. [Windows Users: Click here to skip ahead to the next
-    step.](https://run.qwiklabs.com/focuses/347?catalog_rank=%7B%22rank%22%3A7%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3928994#ssh-after)
+32. Windows Users: skip ahead to the next step.
 
 ### Mac and Linux users
 

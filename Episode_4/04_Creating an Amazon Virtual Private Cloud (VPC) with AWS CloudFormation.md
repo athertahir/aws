@@ -1,4 +1,4 @@
-Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation {.headline-5]
+Creating an Amazon Virtual Private Cloud (VPC) with AWS CloudFormation
 ======================================================================
 
 - Overview
@@ -447,7 +447,7 @@ Your VPC has also been deleted.
 
 The **Lab VPC** is no longer listed. In addition, the associated Internet Gateway, Subnets and Route Tables have been deleted.
 
-Conclusion [step9]
+Conclusion
 ----------
 
 Congratulations! You now have successfully learned how to:

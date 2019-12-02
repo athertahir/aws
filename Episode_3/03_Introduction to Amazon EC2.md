@@ -5,7 +5,7 @@ Introduction to Amazon EC2
 - Task 1: Launch Your Amazon EC2 Instance
 - Task 2: Monitor Your Instance
 - Task 3: Update Your Security Group and Access the Web Server
-- Task 4: Resize Your Instance: Instance Type and EBS Volume(https://
+- Task 4: Resize Your Instance: Instance Type and EBS Volume
 - Task 5: Explore EC2 Limits
 - Task 6: Test Termination Protection
 
@@ -49,7 +49,7 @@ In this task, you will launch an Amazon EC2 instance with *termination protectio
 
 ### Step 1: Choose an Amazon Machine Image (AMI)
 
-** An **Amazon Machine Image (AMI)** provides the information required to launch an instance, which is a virtual server in the cloud. An AMI includes:
+An **Amazon Machine Image (AMI)** provides the information required to launch an instance, which is a virtual server in the cloud. An AMI includes:
 
 -   A template for the root volume for the instance (for example, an operating system or an application server with applications)
 -   Launch permissions that control which AWS accounts can use the AMI to launch instances
@@ -73,26 +73,25 @@ This page is used to configure the instance to suit your requirements. This incl
 
 The **Network** indicates which Virtual Private Cloud (VPC) you wish to launch the instance into. You can have multiple networks, such as different ones for development, testing and production.
 
-1.  For **Network**, select **Lab VPC**.
+1. For **Network**, select **Lab VPC**.
 
-The Lab VPC was created using a CloudFormation template during the setup process of your lab. This VPC includes two public subnets in two different Availability Zones.
+    The Lab VPC was created using a CloudFormation template during the setup process of your lab. This VPC includes two public subnets in two different Availability Zones.
 
-1.  For **Enable termination protection**, select **Protect against accidental termination**.
+2.  For **Enable termination protection**, select **Protect against accidental termination**.
 
-When an Amazon EC2 instance is no longer required, it can be *terminated*, which means that the instance is stopped and its resources are released. A terminated instance cannot be started again. If you want to prevent the instance from being accidentally terminated, you can enable *termination protection* for the instance, which prevents it from being terminated.
+    When an Amazon EC2 instance is no longer required, it can be *terminated*, which means that the instance is stopped and its resources are released. A terminated instance cannot be started again. If you want to prevent the instance from being accidentally terminated, you can enable *termination protection* for the instance, which prevents it from being terminated.
 
-1.  Scroll down, then expand **Advanced Details**.
+3.  Scroll down, then expand **Advanced Details**.
 
-A field for **User data** will appear.
+    A field for **User data** will appear.
 
-When you launch an instance, you can pass *user data* to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts.
+    When you launch an instance, you can pass *user data* to the instance that can be used to perform common automated configuration tasks and even run scripts after the instance starts.
 
-Your instance is running Amazon Linux, so you will provide a *shell script* that will run when the instance starts.
+    Your instance is running Amazon Linux, so you will provide a *shell script* that will run when the instance starts.
 
-1.  Copy the following commands and paste them into the **User data** field:
+4.  Copy the following commands and paste them into the **User data** field:
 
 <!-- -->
-
     #!/bin/bash
     yum -y install httpd
     systemctl enable httpd
@@ -106,11 +105,12 @@ The script will:
 -   Activate the Web server
 -   Create a simple web page
 
-1.  Click Next: Add Storage
+
+Click **Next:** Add Storage
 
 ### Step 4: Add Storage
 
-** Amazon EC2 stores data on a network-attached virtual disk called *Elastic Block Store*.
+Amazon EC2 stores data on a network-attached virtual disk called *Elastic Block Store*.
 
 You will launch the Amazon EC2 instance using a default 8 GiB disk volume. This will be your root volume (also known as a 'boot' volume).
 
@@ -118,14 +118,13 @@ You will launch the Amazon EC2 instance using a default 8 GiB disk volume. This 
 
 ### Step 5: Add Tags
 
-** Tags enable you to categorize your AWS resources in different ways, for example, by purpose, owner, or environment. This is useful when you have many resources of the same type — you can quickly identify a specific resource based on the tags you have assigned to it. Each tag consists of a Key and a Value, both of which you define.
+Tags enable you to categorize your AWS resources in different ways, for example, by purpose, owner, or environment. This is useful when you have many resources of the same type — you can quickly identify a specific resource based on the tags you have assigned to it. Each tag consists of a Key and a Value, both of which you define.
 
 1.  Click Add Tag then configure:
+    -   **Key:** `Name`
+    -   **Value:** `Web Server`
 
--   **Key:**
--   **Value:**
-
-1.  Click Next: Configure Security Group
+2.  Click Next: Configure Security Group
 
 ### Step 6: Configure Security Group
 
@@ -133,16 +132,16 @@ A *security group* acts as a virtual firewall that controls the traffic for one 
 
 1.  On **Step 6: Configure Security Group**, configure:
 
-Keep the default selection, Create a **new** security group.
+    Keep the default selection, Create a **new** security group.
 
--   **Security group name:**
--   **Description:**
+    -   **Security group name:** `Web Server security group`
+    -   **Description:** `Security group for my web server`
 
-In this lab, you will not log into your instance using SSH. Removing SSH access will improve the security of the instance.
+    In this lab, you will not log into your instance using SSH. Removing SSH access will improve the security of the instance.
 
-1.  Delete the existing SSH rule.
+2.  Delete the existing SSH rule.
 
-2.  Click Review and Launch
+3.  Click Review and Launch
 
 ### Step 7: Review Instance Launch
 
@@ -284,7 +283,7 @@ When you stop an instance, it is shut down. There is no charge for a stopped EC2
 
     **Web Server** should already be selected.
 
-2.  In the Actions menu, select **Instance State > **Stop**.
+2.  In the Actions menu, select **Instance State** > **Stop**.
 
 3.  Click Yes, Stop
 
@@ -323,7 +322,7 @@ You will now start the instance again, which will now have more memory and more 
 
 1.  In left navigation pane, click **Instances**.
 
-2.  In the Actions menu, select **Instance State > **Start**.
+2.  In the Actions menu, select **Instance State** > **Start**.
 
 3.  Click Yes, Start
 
@@ -353,7 +352,7 @@ In this task, you will learn how to use *termination protection*.
 
 1.  In left navigation pane, click **Instances**.
 
-2.  In the Actions menu, select **Instance State > **Terminate**.
+2.  In the Actions menu, select **Instance State** > **Terminate**.
 
     Note that there is a message that says: *These instances have Termination Protection and will not be terminated. Use the Change Termination Protection option from the Instances screen Actions menu to allow termination of these instances.*
 
@@ -369,7 +368,7 @@ In this task, you will learn how to use *termination protection*.
 
     You can now terminate the instance.
 
-6.  In the Actions menu, select **Instance State > **Terminate**.
+6.  In the Actions menu, select **Instance State** > **Terminate**.
 
 7.  Click Yes, Terminate
 

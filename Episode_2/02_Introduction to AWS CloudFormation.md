@@ -115,7 +115,7 @@ The following parameters are defined in the template:
 
 6.  On the **Create stack** page, configure:
 
--   **Stack name:**
+-   **Stack name:** `WordPress`
 
 7.  Look at the default value for **DBName**.
 
@@ -550,8 +550,7 @@ able to connect to your instance.
 
 These instructions are for Windows users only.
 
-If you are using Mac or Linux, [skip to the next
-section](https://run.qwiklabs.com/focuses/383?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3932837#ssh-MACLinux).
+If you are using Mac or Linux, skip to the next section.
 
 40. To the left of the instructions you are currently reading, click **Download PPK**.
 
@@ -590,17 +589,14 @@ time.
 
 This will connect to your EC2 instance.
 
-47. [Windows Users: Click here to skip ahead to the next
-    task.](https://run.qwiklabs.com/focuses/383?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3932837#ssh-after)
+47. Windows Users, skip ahead to the next task.
 
 ### Mac and Linux Users
 
 These instructions are for Mac/Linux users only. If you are a Windows
-user, [skip ahead to the next
-task.](https://run.qwiklabs.com/focuses/383?catalog_rank=%7B%22rank%22%3A4%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=3932837#Next)
+user, skip ahead to the next task.
 
-48. To the left of the instructions you are currently reading, click **
-    **Download PEM**.
+48. To the left of the instructions you are currently reading, click **Download PEM**.
 
 49. Save the file to the directory of your choice.
 

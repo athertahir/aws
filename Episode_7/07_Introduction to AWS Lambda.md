@@ -398,7 +398,7 @@ Congratulations! You have successfully:
 -   Triggered a Lambda function by uploading an object to Amazon S3
 -   Monitored AWS Lambda S3 functions through Amazon CloudWatch Log
 
-End Lab [step9]
+End Lab
 -------
 
 Follow these steps to close the console, end your lab, and evaluate the
@@ -411,6 +411,5 @@ experience.
 
 ### Additional Resources
 
--   [AWS Lambda
-    documentation](https://aws.amazon.com/documentation/lambda/)
--   [AWS Training & Certification](http://aws.amazon.com/training/).
+-   [AWS Lambda documentation](https://aws.amazon.com/documentation/lambda/)
+
