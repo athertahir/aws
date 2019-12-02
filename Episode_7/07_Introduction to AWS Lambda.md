@@ -314,8 +314,9 @@ Be sure to replace **example-bucket** in both locations.
 AWS Lambda will now trigger your function, using *HappyFace.jpg* as the
 input image.
 
-Towards the top of the page you should see the message: *Execution
-result: succeeded*
+Towards the top of the page you should see the message: 
+
+*Execution result: succeeded*
 
 If your test did not succeed, the error message will explain the
 cause of failure. For example, a *Forbidden* message means that the

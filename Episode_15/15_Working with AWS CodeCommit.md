@@ -64,7 +64,7 @@ Connection details will be displayed.
 Task 2: Connect to Your EC2 Instance
 ------------------------------------
 
-An EC2 instance has been created for you as part of the lab. In this
+You can create new EC2 instance or use exisitng one. In this
 task, you will connect to the instance.
 
 ### Windows Users: Using SSH to Connect
@@ -73,7 +73,7 @@ These instructions are for Windows users only.
 
 If you are using Mac or Linux, skip to the next section.
 
-1.  To the left of the instructions you are currently reading, click **Download PPK**.
+1.  **Create/Download PPK** using AWS Console.
 
 2.  Save the file to the directory of your choice.
 
@@ -118,7 +118,7 @@ These instructions are for Mac/Linux users only. If you are a Windows
 user, skip ahead to the next task.
 
 
-1.  To the left of the instructions you are currently reading, click **Download PEM**.
+1.  **Create/Download PEM** using AWS Console.
 
 2.  Save the file to the directory of your choice.
 
@@ -137,7 +137,7 @@ ssh -i KEYPAIR.pem ec2-user@EC2PublicIP
 
 3.  Paste the updated command into the Terminal window and run it.
 
-4.  Type when prompted to allow a first connection to this remote SSH
+4.  Type `yes` when prompted to allow a first connection to this remote SSH
     server.
 
 Because you are using a key pair for authentication, you will not be

@@ -191,7 +191,7 @@ Wordpress website.
 Task 3: Log in to your Amazon EC2 instance
 ------------------------------------------
 
-In this task, you log in to your Amazon EC2 instance. You can creata new or use the existing one.  Public IP address of the instance is needed.
+In this task, you log in to your Amazon EC2 instance. You can creat a new or use the existing one. Public IP address of the instance is needed.
 
 ### Windows users: Using SSH to connect
 
@@ -199,7 +199,7 @@ These instructions are for Windows users only.
 
 If you are using Mac or Linux, skip to the next section.
 
-25. To the left of the instructions you are currently reading, click **Download PPK**.
+25. **Create/Download PPK** using AWS Console.
 
 26. Save the file to the directory of your choice.
 
@@ -243,7 +243,7 @@ This will connect to your EC2 instance.
 
 These instructions are for Mac/Linux users only.
 
-33. To the left of these instructions, click **Download PEM**.
+33. **Create/Download PEM** using AWS Console.
 
 34. Save the file to the directory of your choice.
 

@@ -552,7 +552,7 @@ These instructions are for Windows users only.
 
 If you are using Mac or Linux, skip to the next section.
 
-40. To the left of the instructions you are currently reading, click **Download PPK**.
+40. **Create/Download PPK** using AWS Console.
 
 41. Save the file to the directory of your choice.
 
@@ -596,7 +596,7 @@ This will connect to your EC2 instance.
 These instructions are for Mac/Linux users only. If you are a Windows
 user, skip ahead to the next task.
 
-48. To the left of the instructions you are currently reading, click **Download PEM**.
+48. **Create/Download PEM** using AWS Console.
 
 49. Save the file to the directory of your choice.
 
